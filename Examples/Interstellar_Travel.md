@@ -1,0 +1,1 @@
+The idea of interstellar probes or crewed spacecraft moving between stars and planetary systems in a Galaxy. For example, the potential travelling from the Solar System to [[Alpha_Centauri]]

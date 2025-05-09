@@ -1,0 +1,278 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "EZTdmstKnKELKp9f_lkn7",
+      "name": "Utility Folders",
+      "value": "#c7c000"
+    },
+    {
+      "id": "Aj8YUU7QOJleocfBX_tDq",
+      "name": "Programming Tools",
+      "value": "#009b9e"
+    },
+    {
+      "id": "QB9zbtoOAom8nW4evR0FR",
+      "name": "Reading",
+      "value": "#ff0000"
+    },
+    {
+      "id": "MAtzkdcRXm1uV21JZZaQj",
+      "name": "Mathematical",
+      "value": "#3ba800"
+    },
+    {
+      "id": "e1NzmoGnOD64JmCXlnUxL",
+      "name": "Study Tips",
+      "value": "#ff8800"
+    },
+    {
+      "id": "3uxGZR6uxvJMq9JNBhQeZ",
+      "name": "Obsidian",
+      "value": "#a600ff"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Templates",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "Images",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "Examples",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "CMAKE",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "CMAKE/Introduction_to_Cmake.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Books",
+      "color": "QB9zbtoOAom8nW4evR0FR"
+    },
+    {
+      "path": "Books/The_Passionate_Programmer.md",
+      "color": "QB9zbtoOAom8nW4evR0FR"
+    },
+    {
+      "path": "Dictionary",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "Books/The_Pragmatic_Programmer.md",
+      "color": "QB9zbtoOAom8nW4evR0FR"
+    },
+    {
+      "path": "Dictionary/Programming_By_Coincidence.md",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "MAKEFILE",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "MAKEFILE/Makefile_Tutorial.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "PostgreSQL",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "PostgreSQL/Introdução.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "PostgreSQL/PostgreSQL Tutorial.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "VHDL",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "VHDL/Simulação Funcional - Quartus.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "VHDL/Similacao_Funcional_University_Program_VWF.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "VHDL/Sinais e Constantes.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "VHDL/Comandos_Basicos.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/EECS498",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "PostgreSQL/FreeCodeCamp.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "PostgreSQL/Neon_Tutorial/Neon.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms/Dynamic Programming",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms/Dynamic Programming/Dynamic Programming Definition.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms/Dynamic Programming/Fibonacci Sequence.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms/Dynamic Programming/Longest Common Sequence (LCS).md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/EECS498/Lecture 1.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Books/Algorithms - A creative Approach (Udi Manber)",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/EECS498/Homework 1.md",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "PostgreSQL/Neon_Tutorial",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "PostgreSQL/Neon_Tutorial/Section 1.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Tables",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "PostgreSQL/Neon_Tutorial/Section 2.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/Sloperama",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/Sloperama/Game Design 101.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/First Steps Into Making Games.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "GameDev/Sloperama/What Is Game Design.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Probability",
+      "color": "MAtzkdcRXm1uV21JZZaQj"
+    },
+    {
+      "path": "GameDev/Game Repositorie",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "GameDev/Books",
+      "color": "QB9zbtoOAom8nW4evR0FR"
+    },
+    {
+      "path": "Algorithms/Sorting",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Study_Techniques",
+      "color": "e1NzmoGnOD64JmCXlnUxL"
+    },
+    {
+      "path": "CMAKE/Template_Inicial.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Probability/Conditional Probability.md",
+      "color": "MAtzkdcRXm1uV21JZZaQj"
+    },
+    {
+      "path": "Study_Techniques/Obsidian_Tips.md",
+      "color": "e1NzmoGnOD64JmCXlnUxL"
+    },
+    {
+      "path": "Obsidian",
+      "color": "3uxGZR6uxvJMq9JNBhQeZ"
+    },
+    {
+      "path": "Obsidian/FlashCard_example.md",
+      "color": "3uxGZR6uxvJMq9JNBhQeZ"
+    },
+    {
+      "path": "Mathematics",
+      "color": "MAtzkdcRXm1uV21JZZaQj"
+    },
+    {
+      "path": "Mathematics/Summations.md",
+      "color": "MAtzkdcRXm1uV21JZZaQj"
+    },
+    {
+      "path": "Algorithms/Sorting/Bubble_Sort.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms/Sorting/Insertion_Sort.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Algorithms/Sorting/Selection_Sort.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Templater",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "Templater/texttt.md",
+      "color": "EZTdmstKnKELKp9f_lkn7"
+    },
+    {
+      "path": "Python",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Python/Learn_X_in_Y_minutes",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Python/Learn_X_in_Y_minutes/Note.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    }
+  ]
+}

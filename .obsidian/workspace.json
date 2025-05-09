@@ -1,0 +1,245 @@
+{
+  "main": {
+    "id": "4a287af0e527938e",
+    "type": "split",
+    "children": [
+      {
+        "id": "dad2e02e57ed4d90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a26526729ab89514",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Learn_X_in_Y_minutes/Note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Note"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d59a81e244d56cff",
+    "type": "split",
+    "children": [
+      {
+        "id": "660c89215f7eaa90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c27f57ac8bcbbe7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "65be2189b09553dd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "cfd1fb2a48305882",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b39a4ef0f04c44a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a1d79b069046065",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d9cdff5f205c8e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CMAKE/Understanding_The_Basics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Understanding_The_Basics"
+            }
+          },
+          {
+            "id": "912f32d543ae1daf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "aeae744cddc0c1c2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cc90d6dd602db32e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          },
+          {
+            "id": "8b6c46c401ee3002",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "6a1b834b95c95651",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-kanban:Create new board": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "a26526729ab89514",
+  "lastOpenFiles": [
+    "Algorithms/Sorting/Selection_Sort.md",
+    "Python/Learn_X_in_Y_minutes/Note.md",
+    "Python/Learn_X_in_Y_minutes",
+    "Python",
+    "Algorithms/Sorting/Insertion_Sort.md",
+    "Algorithms/Sorting/Bubble_Sort.md",
+    "Mathematics/Summations.md",
+    "Templater/texttt.md",
+    "Algorithms/Sorting/Untitled.md",
+    "Templater",
+    "Obsidian/FlashCard_example.md",
+    "Mathematics",
+    "Obsidian",
+    "CMAKE/Template_Inicial.md",
+    "Study Techniques/Untitled.md",
+    "Study_Techniques/Obsidian_Tips.md",
+    "PostgreSQL/Neon_Tutorial/Section 2.md",
+    "Study_Techniques",
+    "Images/Insertion-sort-example-300px.gif",
+    "Images/Selection-Sort-Animation.gif",
+    "Algorithms/Sorting",
+    "Images/diagrama_arvore_arquivos_cmake.png",
+    "CMAKE/Introduction_to_Cmake.md",
+    "Books/Algorithms - A creative Approach (Udi Manber)/Recurrence Relations/Teorema Master Simplificado.md",
+    "Algorithms/Dynamic Programming/Longest Common Sequence (LCS).md",
+    "Algorithms/Dynamic Programming/Dynamic Programming Definition.md",
+    "Algorithms/Dynamic Programming/Fibonacci Sequence.md",
+    "GameDev/Books/Cpp_Programming/Chapter_1.md",
+    "GameDev/Books/Cpp_Programming/Timber.md",
+    "Images/e6bc549454e71e0e0e2146d237a4cc1a3bc706393d9557b725c88a69e2d1f3d8.avif",
+    "Images/maxresdefault.jpg",
+    "Images/0c0cc60c-5b90-4f1e-8d7c-68bf07c8687fss_3ac16eb48edf0f019caec63ea6234d4c123cf5db.webp",
+    "GameDev/Books/Untitled.md",
+    "GameDev/Books/Cpp_Programming",
+    "GameDev/EECS498/Homework 1.md",
+    "GameDev/Sloperama/Roles in the Game Biz.md",
+    "GameDev/Books",
+    "GameDev/Sloperama/What Is Game Design.md",
+    "GameDev/Game Repositorie/NES/Archon.md",
+    "Images/Pasted image 20250421190522.png",
+    "Images/Pasted image 20250421185552.png",
+    "Images/Archon_board.svg.png",
+    "Images/NES_03.gif",
+    "MAKEFILE/Makefile_Tutorial.md",
+    "Makefile.md",
+    "GameDev/Game Repositorie/NES",
+    "Untitled.canvas"
+  ]
+}
