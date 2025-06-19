@@ -71,19 +71,20 @@ Quais são as principais vantagens de se usar o InsertionSort?
 - Eficiente para entradas de tamanho pequeno
 - Já eficiente para arrays parcialmente ordenados
 - Tende a ser mais eficiente que outros algoritmos de ordenação que estão na classe $O(n^2)$
-<!--SR:!2025-05-10,3,250-->
+<!--SR:!2025-05-20,8,250-->
 
 Dê um argumento do porquê o algoritmo de ordenação por inserção é eficiente para ordenar vetores parcialmente ordenados
 ?
 Se os vetores estão parcialmente ordenados, então cada elemento deve mover no máximo $k$ vezes até atingir sua posição. Desse modo, a complexidade fica $O(k*n) = O(n)$. Pense que daí vem a eficiência para vetores de pequeno tamanho.
-<!--SR:!2025-05-11,4,270-->
+<!--SR:!2025-05-22,10,270-->
 
 Quais são as complexidades (melhor caso e pior caso) para o InsertionSort
 ?
 Complexidade Melhor caso: $O(n)$
 Complexidade Pior caso: $O(n^2)$
-<!--SR:!2025-05-11,4,270-->
+<!--SR:!2025-05-23,11,270-->
 
 Implemente o Insertion Sort
 ?
-Resposta em [[Insertion_Sort]]
+Resposta em [[Algorithms/Sorting/Insertion_Sort]]
+<!--SR:!2025-05-15,3,254-->

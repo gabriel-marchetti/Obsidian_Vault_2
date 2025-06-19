@@ -3,7 +3,7 @@ tags:
   - algorithms
   - sorting
 ---
-O algoritmo de Selection_Sort geralmente atua pior que o [[Insertion_Sort]]. Contudo, a sua vantagem com relação a algoritmos mais sofisticados de ordenação se refere ao fato de ele não consumir mais memória. 
+O algoritmo de Selection_Sort geralmente atua pior que o [[Algorithms/Sorting/Insertion_Sort]]. Contudo, a sua vantagem com relação a algoritmos mais sofisticados de ordenação se refere ao fato de ele não consumir mais memória. 
 Vantagens:
 - O consumo de memória é praticamente o consumo do vetor
 - Simplicidade implementação
@@ -62,6 +62,7 @@ Quais são os pontos positivos do SelectionSort?
 O SelectionSort possui vantagem em ser utilizado dentro de um vetor quase ordenado?
 ?
 Não, pois sua complexidade sempre é $O(n^2)$
+<!--SR:!2025-05-16,4,270-->
 
 Implemente o SelectionSort
 ?

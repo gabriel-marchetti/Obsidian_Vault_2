@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiPython",
-      "RiNumber1",
-      "📚",
-      "FasBookOpen",
-      "LiDice"
+      "SiCsharp",
+      "🏢",
+      "SiCplusplus",
+      "SiMongodb",
+      "RiComputerLine"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -50,5 +50,10 @@
   "GameDev/Game Repositorie": "FasBookOpen",
   "Mathematics": "RiNumber1",
   "Python": "SiPython",
-  "Study_Techniques": "📚"
+  "Study_Techniques": "📚",
+  "Professores_IC": "RiComputerLine",
+  "MongoDB": "SiMongodb",
+  "C++": "SiCplusplus",
+  "Job_and_Career": "🏢",
+  "CSharp": "SiCsharp"
 }

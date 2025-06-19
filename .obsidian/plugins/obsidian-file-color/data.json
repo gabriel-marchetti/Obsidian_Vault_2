@@ -31,6 +31,16 @@
       "id": "3uxGZR6uxvJMq9JNBhQeZ",
       "name": "Obsidian",
       "value": "#a600ff"
+    },
+    {
+      "id": "-koad4h8ftO9mY-7HAkVB",
+      "name": "Organizacao",
+      "value": "#f7b9f8"
+    },
+    {
+      "id": "RxHrvKDtROSgh2SwePLQc",
+      "name": "Databases",
+      "value": "#800000"
     }
   ],
   "fileColors": [
@@ -84,7 +94,7 @@
     },
     {
       "path": "PostgreSQL",
-      "color": "Aj8YUU7QOJleocfBX_tDq"
+      "color": "RxHrvKDtROSgh2SwePLQc"
     },
     {
       "path": "PostgreSQL/Introdução.md",
@@ -272,6 +282,30 @@
     },
     {
       "path": "Python/Learn_X_in_Y_minutes/Note.md",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Professores_IC",
+      "color": "-koad4h8ftO9mY-7HAkVB"
+    },
+    {
+      "path": "Python/Lists",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "MongoDB",
+      "color": "RxHrvKDtROSgh2SwePLQc"
+    },
+    {
+      "path": "C++",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Job_and_Career",
+      "color": "-koad4h8ftO9mY-7HAkVB"
+    },
+    {
+      "path": "CSharp",
       "color": "Aj8YUU7QOJleocfBX_tDq"
     }
   ]

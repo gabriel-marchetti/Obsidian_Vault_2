@@ -1,0 +1,5 @@
+- Performance.
+- Portability.
+- OOP.
+- Support to low-level and high-level programming.
+- Bibliotecas como STL, Boost, Qt
