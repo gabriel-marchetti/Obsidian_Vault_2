@@ -94,6 +94,13 @@
         "type": "DIRECTORIES",
         "pattern": "Job_and_Career",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "DIRECTORIES",
+        "pattern": "Videos",
+        "patternType": "STRICT"
       }
     ]
   },

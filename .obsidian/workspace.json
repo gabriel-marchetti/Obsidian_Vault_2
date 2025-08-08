@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9d736b6abfb1c408",
+        "id": "e29f81903d1d08c4",
         "type": "tabs",
         "children": [
           {
-            "id": "ce19dbb5d1a97ced",
+            "id": "7f0125f17450d86c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSharp/NelioAlves/Section3/Entrada_de_Dados.md",
+                "file": "Faculdade/IC/ScikitLearn_Study.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Entrada_de_Dados"
+              "title": "ScikitLearn_Study"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 335.5
   },
   "right": {
     "id": "b39a4ef0f04c44a9",
@@ -193,54 +193,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ce19dbb5d1a97ced",
+  "active": "7f0125f17450d86c",
   "lastOpenFiles": [
-    "CSharp/NelioAlves/Section3/Conversao_implica_e_casting.md",
+    "Algorithms/MC458/Lista_Teste_2/Exercise2.md",
+    "Faculdade/IC/ScikitLearn_Study.md",
+    "Faculdade/IC",
+    "Faculdade",
+    "IC",
+    "Algorithms/MC458/Lista_Teste_2/Exercise1.md",
+    "Pasted image 20250626162721.png",
+    "Videos/mc458_lista2_exerc2p2.mp4",
+    "Guia para estudo.md",
+    "Videos/mc458_lista2_exerc1.mp4",
+    "2025-06-26 15-47-16.mp4",
+    "Videos",
+    "Images/Pasted image 20250626152820.png",
+    "Images/Pasted image 20250616101434.png",
+    "Images/Pasted image 20250616100704.png",
+    "Images/Pasted image 20250616100009.png",
     "CSharp/NelioAlves/Section3/Entrada_de_Dados.md",
+    "Algorithms/MC458/Lista_Teste_2",
+    "Algorithms/MC458",
+    "Algorithms/Dynamic Programming/Untitled.md",
+    "CSharp/NelioAlves/Section3/Conversao_implica_e_casting.md",
     "CSharp/NelioAlves/Section3/Saida_de_Dados.md",
     "CSharp/NelioAlves/Section3/Name_Convention.md",
     "CSharp/NelioAlves/Section3/Tipos_Basicos_de_Dados.md",
     "CSharp/NelioAlves/Section2/Estrutura_Programa_CSharp.md",
     "CSharp/NelioAlves/Section3",
     "CSharp/NelioAlves/Section2/Estrutura_aplicacao_dotnet.md",
-    "CSharp/NelioAlves/Section2/Untitled",
-    "Pasted image 20250616101529.png",
-    "Pasted image 20250616101510.png",
-    "Pasted image 20250616101434.png",
+    "Images/Pasted image 20250616101529.png",
+    "Images/Pasted image 20250616101510.png",
     "CSharp/NelioAlves/Section2/Compilation_vs_Interpretation.md",
-    "Pasted image 20250616100704.png",
     "CSharp/NelioAlves/Section2/CSharp_vs_Dotnet.md",
-    "Pasted image 20250616100009.png",
     "C++/C++_Primer/Chapter2/Notes.md",
-    "CSharp/NelioAlves/Section2",
-    "CSharp/NelioAlves/Secao2",
-    "CSharp/NelioAlves",
-    "CSharp",
     "Images/Pasted image 20250610163515.png",
     "C++/C++_Primer/Chapter1/1_note.md",
-    "C++/C++_Primer/Chapter2",
     "Images/Pasted image 20250609090921.png",
     "Algorithms/Minimum_Spanning_Tree/Problem_Description.md",
-    "C++/C++_Primer/Chapter1",
     "C++/C++_Primer/Chapter_1.md",
-    "C++/C++_Primer",
     "Algorithms/Disjoint_Set_Union/DSU_Definition.md",
-    "Algorithms/Minimum_Spanning_Tree",
     "C++/LearnCpp/0.2_introduction_to_programs_and_programming_languages.md",
     "Images/Pasted image 20250604173500.png",
-    "Images/Pasted image 20250529212706.png",
     "C++/LearnCpp/0.1_introduction_to_these_tutorials.md",
     "C++/Cpp_RoadMap/Why_Cpp.md",
     "C++/LearnCpp.md",
     "C++/Cpp_RoadMap/What_is_Cpp.md",
     "C++/Cpp_RoadMap/Introduction_to_the_Language.md",
     "C++/Cpp_RoadMap/C_vs_Cpp.md",
-    "GameDev/Books/Cpp_Programming/Chapter_2.md",
-    "GameDev/Books/Cpp_Programming/Chapter_1.md",
-    "GameDev/Books/Cpp_Programming/Timber.md",
-    "Job_and_Career/Compute_Graphics/Options.md",
-    "Job_and_Career/Untitled.md",
-    "Images/Pasted image 20250529212802.png",
     "Untitled.canvas"
   ]
 }
