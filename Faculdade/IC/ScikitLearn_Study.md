@@ -1,3 +1,8 @@
+# TOC
+- [[ScikitLearn_Study#Scikit-learn governance and decision-making.|Governancee and Decision-Making]]
+- [[ScikitLearn_Study#Structure of LogisticRegression.|Structure of LogisticRegression.]]
+
+
 # Scikit-learn governance and decision-making.
 Link: https://scikit-learn.org/stable/governance.html
 
@@ -90,3 +95,135 @@ python -c "import sklearn; sklearn.show_versions()"
 [ ] Ler https://scikit-learn.org/stable/developers/bug_triaging.html#bug-triaging
 [ ] Ler https://policies.python.org/python.org/code-of-conduct/
 [ ] Olhar https://scikit-learn.org/stable/related_projects.html#related-projects
+
+# Structure of LogisticRegression.
+![[Pasted image 20250813110131.png|center]]
+Path para cada classe:
+```
+LogisticRegression: linear_model/_logistic.py
+
+LinearClassifierMixin: linear_model/_base.py
+SparseCoefMixin: linear_model/_base.py
+BaseEstimator: base.py
+
+ClassifierMixin: base.py
+
+ReprHTMLMixin: utils/_repr_html/base.py
+_HTMLDocumentationLinkMixin: utils/_repr_html/base.py
+_MetadataRequester: utils/_metadata_request.py
+```
+OBS: O Sufixo "Mixin" é usado para designar que a classe será usada com Parent em relações de herança. O intuito é injetar funcionalidades extras segmentando a lógica de cada classe.
+
+Começando pelas mais fáceis...
+
+### **ReprHTMLMixin**:
+Parece ser um acrônimo de Representation HTML. A ideia aqui é utilizar representações mais complexas de objetos através de HTML. 
+O objeto precisa definir o atributo $\texttt{\_html\_repr}$ que na verdade é um callable reconhecido pelo Jupyter Notebook e podemos definí-lo através de:
+```python
+@property
+def _repr_html(self):
+	...
+```
+### \_HTMLDocumentationLinkMixin:
+Essa classe serve para gerar um link para a documentação desejada. Praticamente ele concatena a versão, nome da classe e outras informações para gerar o URL correspondente da classe desejada. 
+
+### \_MetadataRequester:
+A ideia é adicionar dados adicionais sobre classes que herdarão dessa classe.
+OBS:
+	Não entendi muito como essa classe funciona. Parece ser um trecho de código interessante de se explorar por parecer simples e gerar algumas dúvidas até de design.
+	Parece que é uma confusão de definir chamadas sobre chamadas de parâmetros...
+
+### BaseEstimator:
+Todas as classes que herdam dessa classe irão possuir uma interface para 
+1. setting and getting parameters used by `GridSearchCV` and friends
+2. textual and HTML representation displayed in terminals and IDEs
+3. estimator serialization
+4. parameter validation
+5. data validation
+6. feature names validation
+
+(1):
+Suporte para métodos set_params() e get_params()
+```Python
+from sklearn.base import BaseEstimator
+
+class MyEstimator(BaseEstimator):
+    def __init__(self, gamma=0.5, *, alpha=1.0, beta=2.0):
+        self.gamma = gamma
+        self.alpha = alpha
+        self.beta = beta
+    def define_name(self, *, name='Carlos'):
+        self.name = name
+
+est = MyEstimator(10.0, alpha=0.5)
+print(est.get_params())                 # {'alpha': 0.5, 'beta': 2.0, 'gamma': 10.0}
+est.define_name(name='José Alberto')    
+print(est.get_params())                 # {'alpha': 0.5, 'beta': 2.0, 'gamma': 10.0}
+print(est.name)                         # José Alberto
+
+est.set_params(beta=5.0)
+print(est.get_params())                 # {'alpha': 0.5, 'beta': 5.0, 'gamma': 10.0}
+```
+OBS:
+- O \* define que os valores definidos após eles devem ser keyword-only. Tira a necessidade posicional da declaração.
+- Parece que mesmo que eu crie um atributo dentro de um método de uma classe, o get_params() não reconhece esse atributo como param.
+
+OBS:
+	Conseguir exemplos mais práticos do porque as funções get_params() e set_params() são úteis pro GridSearchCV, RandomizedSearchCV, Pipeline.
+
+
+(2):
+A descrição foi suficiente.
+
+(3):
+Serializar os objetos do tipo Estimator para salvar e carregá-los em disco. Evitando o processo de treino.
+
+```Python
+import joblib
+from sklearn.linear_model import LogisticRegression
+
+clf = LogisticRegression().fit([[0, 0], [1, 1]], [0, 1])
+joblib.dump(clf, "modelo.pkl")
+
+clf2 = joblib.load("modelo.pkl") 
+print(clf2.predict([[2, 2]]))
+```
+(4):
+Serve para garantir que parâmetros estão dentro de um valor e que strings possuem valores válidos.
+```
+>> sklearn.utils._param_validation.Interval
+>> sklearn.utils._param_validation.StrOptions
+```
+```Python
+from sklearn.base import BaseEstimator
+from sklearn.utils._param_validation import Interval
+from sklearn.utils._param_validation import StrOptions
+from numbers import Real
+
+class MyEstimator(BaseEstimator):
+    _parameter_constraints = {
+        'alpha' : [Interval(Real, 0, None, closed='left')],
+        'penalty' : [StrOptions({'L1', 'L2'})]
+    }
+
+    def __init__(self, alpha=1.0, penalty='L2'):
+        self.alpha = alpha
+        self.penalty = penalty
+        self._validate_params()
+
+est_correct = MyEstimator(alpha=2.0, penalty='L2')
+est_wrong_alpha = MyEstimator(alpha=-1.0, penalty='L1')
+est_wrong_pen = MyEstimator(alpha=0.5, penalty='Joao')
+```
+
+(5):
+Utilizado para validar e padronizar os dados de entrada. Alguns exemplos são:
+- Verificar existência de NaN.
+- Converter entre tipos como um array para np.array.
+
+(6):
+Como há grande integração com o Pandas ele apenas verifica se os nomes dos Dataframes são correspondentes.
+
+
+
+
