@@ -11,14 +11,12 @@
             "id": "7f0125f17450d86c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Faculdade/IC/ScikitLearn_Study.md",
-                "mode": "source",
-                "source": false
+                "file": "Images/Pasted image 20250819145629.png"
               },
-              "icon": "lucide-file",
-              "title": "ScikitLearn_Study"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250819145629"
             }
           }
         ]
@@ -180,6 +178,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -193,34 +192,43 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7f0125f17450d86c",
+  "active": "7c27f57ac8bcbbe7",
   "lastOpenFiles": [
-    "Faculdade/IC/Python_Duvidas.md",
+    "Faculdade/IC/TrustWorthy_MachineLearning/Detection_Theory.md",
+    "Images/Pasted image 20250822091055.png",
+    "Images/Pasted image 20250821153733.png",
+    "Faculdade/IC/TrustWorthy_MachineLearning/Privacy_and_Consent.md",
+    "Faculdade/2025s2/MC934/Convexidade_e_Suavidade.md",
+    "Images/Pasted image 20250820110628.png",
+    "Images/Pasted image 20250819174723.png",
+    "Images/Pasted image 20250819174051.png",
+    "Images/Pasted image 20250819173438.png",
+    "Faculdade/2025s2/MC934",
+    "Images/Pasted image 20250819145629.png",
+    "3D_Priting/3D_Printer_Comparison/Enders_Comparing.md",
+    "Faculdade/IC/TrustWorthy_MachineLearning/Privacy_and_Consent",
+    "Faculdade/IC/TrustWorthy_MachineLearning",
+    "Faculdade/2025s2/MC558/Material/Trees.md",
+    "3D_Priting/3D_Printer_Comparison",
+    "3D_Priting",
+    "Images/Pasted image 20250818110058.png",
+    "Faculdade/2025s2/MC558/Material/Graphs.md",
+    "Images/Pasted image 20250818105219.png",
+    "Images/Pasted image 20250818105046.png",
+    "Faculdade/2025s2/MC558/Estudos/Estudo1_Grafo.md",
+    "Faculdade/2025s2/MC558/Material/Untitled",
+    "Faculdade/2025s2/MC558/Material",
     "Faculdade/IC/ScikitLearn_Study.md",
+    "Faculdade/IC/Python_Duvidas.md",
     "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces/References.md",
     "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces",
     "Faculdade/2025s2/MC504",
-    "Pasted image 20250813110431.png",
-    "Images/Pasted image 20250813110131.png",
-    "Images/Pasted image 20250626162721.png",
-    "Faculdade/2025s2/MC458/Estudos/Estudo1_Grafo.md",
     "Faculdade/2025s2/MC458/Estudos/().md",
     "Faculdade/2025s2/MC458/Estudos/Handshake Theorem.md",
-    "Faculdade/2025s2/MC458/Estudos",
-    "Faculdade/2025s2/MC458",
-    "Faculdade/2025s2",
+    "Faculdade/2025s2/MC558/Estudos",
     "Algorithms/MC458/Lista_Teste_2/Exercise2.md",
-    "Faculdade/IC",
-    "Faculdade",
-    "IC",
     "Algorithms/MC458/Lista_Teste_2/Exercise1.md",
-    "Videos/mc458_lista2_exerc2p2.mp4",
     "Guia para estudo.md",
-    "Videos/mc458_lista2_exerc1.mp4",
-    "Images/Pasted image 20250626152820.png",
-    "Images/Pasted image 20250616101434.png",
-    "Images/Pasted image 20250616100704.png",
-    "Images/Pasted image 20250616100009.png",
     "CSharp/NelioAlves/Section3/Entrada_de_Dados.md",
     "Algorithms/Dynamic Programming/Untitled.md",
     "CSharp/NelioAlves/Section3/Conversao_implica_e_casting.md",
@@ -229,18 +237,8 @@
     "CSharp/NelioAlves/Section3/Tipos_Basicos_de_Dados.md",
     "CSharp/NelioAlves/Section2/Estrutura_Programa_CSharp.md",
     "CSharp/NelioAlves/Section2/Estrutura_aplicacao_dotnet.md",
-    "Images/Pasted image 20250616101529.png",
-    "Images/Pasted image 20250616101510.png",
     "CSharp/NelioAlves/Section2/Compilation_vs_Interpretation.md",
     "CSharp/NelioAlves/Section2/CSharp_vs_Dotnet.md",
-    "C++/C++_Primer/Chapter2/Notes.md",
-    "Images/Pasted image 20250610163515.png",
-    "C++/C++_Primer/Chapter1/1_note.md",
-    "Algorithms/Minimum_Spanning_Tree/Problem_Description.md",
-    "C++/C++_Primer/Chapter_1.md",
-    "Algorithms/Disjoint_Set_Union/DSU_Definition.md",
-    "C++/LearnCpp/0.2_introduction_to_programs_and_programming_languages.md",
-    "C++/LearnCpp/0.1_introduction_to_these_tutorials.md",
     "Untitled.canvas"
   ]
 }
