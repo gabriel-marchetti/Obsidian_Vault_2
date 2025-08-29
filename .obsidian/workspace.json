@@ -11,12 +11,26 @@
             "id": "7f0125f17450d86c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Images/Pasted image 20250819145629.png"
+                "file": "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250819145629"
+              "icon": "lucide-file",
+              "title": "7-Supervised_Learning"
+            }
+          },
+          {
+            "id": "8f7c341407955b36",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
             }
           }
         ]
@@ -192,29 +206,37 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7c27f57ac8bcbbe7",
+  "active": "7f0125f17450d86c",
   "lastOpenFiles": [
-    "Faculdade/IC/TrustWorthy_MachineLearning/Detection_Theory.md",
-    "Images/Pasted image 20250822091055.png",
-    "Images/Pasted image 20250821153733.png",
-    "Faculdade/IC/TrustWorthy_MachineLearning/Privacy_and_Consent.md",
+    "Images/Pasted image 20250829103526.png",
+    "Images/Pasted image 20250829094417.png",
+    "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
+    "Images/Pasted image 20250824152642.png",
+    "Images/Pasted image 20250828175434.png",
+    "Images/Pasted image 20250828175206.png",
+    "Images/Pasted image 20250828175148.png",
+    "Images/Pasted image 20250828175127.png",
+    "Images/Pasted image 20250828175124.png",
+    "Images/Pasted image 20250828170742.png",
+    "Faculdade/IC/TrustWorthy_MachineLearning/6-Detection_Theory.md",
+    "Images/Pasted image 20250828170446.png",
+    "Faculdade/IC/ISLP/2-Statistical_Learning.md",
+    "Faculdade/IC/ISLP/1-Introduction.md",
+    "Faculdade/2025s2/MC934/Gradiente_Descendente.md",
+    "Faculdade/2025s2/MC558/StevenSkiena/Graph_Transversal.md",
+    "Faculdade/2025s2/MC558/Material/Graphs.md",
+    "Faculdade/2025s2/MC558/StevenSkiena",
+    "Faculdade/IC/ISLP/0-Preface.md",
+    "Faculdade/IC/ISLP",
+    "Faculdade/IC/TrustWorthy_MachineLearning/5-Privacy_and_Consent.md",
     "Faculdade/2025s2/MC934/Convexidade_e_Suavidade.md",
-    "Images/Pasted image 20250820110628.png",
-    "Images/Pasted image 20250819174723.png",
-    "Images/Pasted image 20250819174051.png",
-    "Images/Pasted image 20250819173438.png",
     "Faculdade/2025s2/MC934",
-    "Images/Pasted image 20250819145629.png",
     "3D_Priting/3D_Printer_Comparison/Enders_Comparing.md",
     "Faculdade/IC/TrustWorthy_MachineLearning/Privacy_and_Consent",
     "Faculdade/IC/TrustWorthy_MachineLearning",
     "Faculdade/2025s2/MC558/Material/Trees.md",
     "3D_Priting/3D_Printer_Comparison",
     "3D_Priting",
-    "Images/Pasted image 20250818110058.png",
-    "Faculdade/2025s2/MC558/Material/Graphs.md",
-    "Images/Pasted image 20250818105219.png",
-    "Images/Pasted image 20250818105046.png",
     "Faculdade/2025s2/MC558/Estudos/Estudo1_Grafo.md",
     "Faculdade/2025s2/MC558/Material/Untitled",
     "Faculdade/2025s2/MC558/Material",
@@ -222,10 +244,8 @@
     "Faculdade/IC/Python_Duvidas.md",
     "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces/References.md",
     "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces",
-    "Faculdade/2025s2/MC504",
     "Faculdade/2025s2/MC458/Estudos/().md",
     "Faculdade/2025s2/MC458/Estudos/Handshake Theorem.md",
-    "Faculdade/2025s2/MC558/Estudos",
     "Algorithms/MC458/Lista_Teste_2/Exercise2.md",
     "Algorithms/MC458/Lista_Teste_2/Exercise1.md",
     "Guia para estudo.md",
@@ -233,12 +253,6 @@
     "Algorithms/Dynamic Programming/Untitled.md",
     "CSharp/NelioAlves/Section3/Conversao_implica_e_casting.md",
     "CSharp/NelioAlves/Section3/Saida_de_Dados.md",
-    "CSharp/NelioAlves/Section3/Name_Convention.md",
-    "CSharp/NelioAlves/Section3/Tipos_Basicos_de_Dados.md",
-    "CSharp/NelioAlves/Section2/Estrutura_Programa_CSharp.md",
-    "CSharp/NelioAlves/Section2/Estrutura_aplicacao_dotnet.md",
-    "CSharp/NelioAlves/Section2/Compilation_vs_Interpretation.md",
-    "CSharp/NelioAlves/Section2/CSharp_vs_Dotnet.md",
     "Untitled.canvas"
   ]
 }

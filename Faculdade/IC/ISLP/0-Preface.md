@@ -1,0 +1,4 @@
+- Statistical Learning refere à métodos para entender datasets complexos. Portanto, como hoje em dia há um grande vazão de dados, então cada vez mais se torna necessário o uso de ferramentas do arcabouço de Statistical Learning.
+- ISL (Introduction Statistical Learning) é um precursor do ESL (Elements of Statistical Learning), que é uma versão mais focada na área matemática.
+- Muitos tópicos importantes são abordados dentro do ISLP: **resampling, sparse methods for classification and regression, generalized additive models, tree-based methods, support vector machines, deep learning, survival analysis, clustering and multiple testing**.
+- Cada capítulo possui um laboratório que será relacionado com a aplicação do método apresentado. Portanto, o foco do livro é mais relacionada às aplicações dos métodos do que do desenvolvimento matemático em si. 
