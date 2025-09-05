@@ -5,7 +5,7 @@ Dentro desse capítulo estamos no contexto de uma empresa chamada $JCN$ que dese
 Já foram feitas as fases de: $\texttt{problem specification, data understanding, data preparation}$. Agora devemos ir para a fase de $\texttt{Modeling}$. Para isso primeiro precisamos escolher uma **decision function** que se adeque ao problema. A questão é:
 - Existem diversos algoritmos para lidar com problemas de decisão. Como escolher o melhor?
 
-Podemos adentrar melhor nessa discussão pensando que: Não existem um modelo de Machine Learning que performe melhor que todos os outros em todas as situações. Isso ocorre, porque cada dataset possui uma estrutura específica que o modelo selecionado pode não se adequar muito bem. Desse modo, devemos nos preocupar com *Overfitting* e *Underfitting*, eventos onde ocorre justamente uma alta generalização para o modelo treinado que ele não generaliza para casos fora do treino e o evento totalmente oposto, onde não deixamos a função livre para se adequar aos dados.
+Podemos adentrar melhor nessa discussão pensando que: Não existe um modelo de Machine Learning que performe melhor que todos os outros em todas as situações. Isso ocorre, porque cada dataset possui uma estrutura específica que o modelo selecionado pode não se adequar muito bem ou adequar-se muito bem. Desse modo, devemos nos preocupar com *Overfitting* e *Underfitting*, eventos onde ocorre justamente uma alta especificação do modelo no dataset treinado que ele não generaliza para casos fora do treino e o evento totalmente oposto, onde não deixamos a função livre para se adequar aos dados.
 
 Um modo de atacar esse problema é através da força-bruta: Para cada modelo, treine ele e teste os resultados. Contudo, isso pode ser um pouco trabalhoso. Então, podemos estudar características de cada modelo e ver qual o seu **Domain of Competence**, que consiste no ambiente onde esse modelo irá se destacar, assim como em quais situações ele não irá performar bem.
 
@@ -169,3 +169,5 @@ A regularização pode ser feita através de $l_1$-norm e $l_2$-norm. Contudo, o
 É importante definir o **Domain of Competence** e **Inductive Bias** para não só escolher o melhor modelo para sua tarefa, mas também será útil para discussão envolvendo *fairness*, *robustness* e *explainability*.
 
 
+# Questões:
+1) Quais são as principais características que contribuem para o **inductive bias**?

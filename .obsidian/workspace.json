@@ -4,33 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e29f81903d1d08c4",
+        "id": "1e15dc8d7e04bdb5",
         "type": "tabs",
         "children": [
           {
-            "id": "7f0125f17450d86c",
+            "id": "ff6db63af356af7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
+                "file": "Faculdade/IC/TrustWorthy_MachineLearning/8-Causal_Modeling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7-Supervised_Learning"
-            }
-          },
-          {
-            "id": "8f7c341407955b36",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "8-Causal_Modeling"
             }
           }
         ]
@@ -206,20 +194,31 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7f0125f17450d86c",
+  "active": "7c27f57ac8bcbbe7",
   "lastOpenFiles": [
+    "Images/Pasted image 20250905112010.png",
+    "Faculdade/IC/Reunioes_HIAAC/Reuniao_05_09_25.md",
+    "Images/Pasted image 20250905102717.png",
+    "Faculdade/IC/TrustWorthy_MachineLearning/8-Causal_Modeling.md",
+    "Images/Pasted image 20250902104351.png",
+    "Faculdade/IC/LogisticRegression.md",
+    "Faculdade/IC/Reunioes_HIAAC",
+    "Faculdade/IC/TrustWorthy_MachineLearning/6-Detection_Theory.md",
+    "Images/Pasted image 20250904172659.png",
+    "Images/Pasted image 20250904171259.png",
+    "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
+    "Faculdade/2025s2/MC504/Slides/Introduction.md",
+    "Images/Pasted image 20250903112534.png",
+    "Images/Pasted image 20250903111522.png",
+    "Images/Pasted image 20250903110053.png",
+    "Faculdade/2025s2/MC504/Slides",
+    "Faculdade/IC/Additions/GeneralPerspective_Video.md",
+    "Faculdade/IC/Additions",
+    "Faculdade/IC/ScikitLearn_Study.md",
+    "Images/Pasted image 20250902104913.png",
+    "Faculdade/IC/LogisticRegression",
     "Images/Pasted image 20250829103526.png",
     "Images/Pasted image 20250829094417.png",
-    "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
-    "Images/Pasted image 20250824152642.png",
-    "Images/Pasted image 20250828175434.png",
-    "Images/Pasted image 20250828175206.png",
-    "Images/Pasted image 20250828175148.png",
-    "Images/Pasted image 20250828175127.png",
-    "Images/Pasted image 20250828175124.png",
-    "Images/Pasted image 20250828170742.png",
-    "Faculdade/IC/TrustWorthy_MachineLearning/6-Detection_Theory.md",
-    "Images/Pasted image 20250828170446.png",
     "Faculdade/IC/ISLP/2-Statistical_Learning.md",
     "Faculdade/IC/ISLP/1-Introduction.md",
     "Faculdade/2025s2/MC934/Gradiente_Descendente.md",
@@ -236,23 +235,13 @@
     "Faculdade/IC/TrustWorthy_MachineLearning",
     "Faculdade/2025s2/MC558/Material/Trees.md",
     "3D_Priting/3D_Printer_Comparison",
-    "3D_Priting",
     "Faculdade/2025s2/MC558/Estudos/Estudo1_Grafo.md",
-    "Faculdade/2025s2/MC558/Material/Untitled",
-    "Faculdade/2025s2/MC558/Material",
-    "Faculdade/IC/ScikitLearn_Study.md",
     "Faculdade/IC/Python_Duvidas.md",
     "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces/References.md",
-    "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces",
     "Faculdade/2025s2/MC458/Estudos/().md",
     "Faculdade/2025s2/MC458/Estudos/Handshake Theorem.md",
     "Algorithms/MC458/Lista_Teste_2/Exercise2.md",
     "Algorithms/MC458/Lista_Teste_2/Exercise1.md",
-    "Guia para estudo.md",
-    "CSharp/NelioAlves/Section3/Entrada_de_Dados.md",
-    "Algorithms/Dynamic Programming/Untitled.md",
-    "CSharp/NelioAlves/Section3/Conversao_implica_e_casting.md",
-    "CSharp/NelioAlves/Section3/Saida_de_Dados.md",
     "Untitled.canvas"
   ]
 }
