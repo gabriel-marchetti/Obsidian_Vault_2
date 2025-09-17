@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiBook",
-      "FasPerson",
+      "RiCpuLine",
       "LiMove3d",
       "LiUniversity",
-      "SiCsharp"
+      "SiCsharp",
+      "🏢"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,6 +58,5 @@
   "CSharp": "SiCsharp",
   "Faculdade": "LiUniversity",
   "3D_Priting": "LiMove3d",
-  "Pessoal": "FasPerson",
-  "Pessoal/Leituras": "LiBook"
+  "Embedded_Systems": "RiCpuLine"
 }

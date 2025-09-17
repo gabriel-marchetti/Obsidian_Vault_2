@@ -106,7 +106,7 @@
         "name": "",
         "active": true,
         "type": "FILES",
-        "pattern": "Pessoal/Leituras/Carreira/Content_Guide.md",
+        "pattern": "Projetos/ToC.md",
         "patternType": "STRICT"
       }
     ]
