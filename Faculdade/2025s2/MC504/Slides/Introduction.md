@@ -58,15 +58,83 @@ Existem dois modos que podemos tratar uma requisição I/O:
 
 # Computer Startup:
 A inicialização de um programa é feita através de um **Bootstrap program**, que é carregado no momento em que inicializamos o computador. Geralmente o armazenamento desse programa é feito através de uma **ROM** ou **EPROM** que é conhecida como **Firmware**. Veja que o componente principal desse momento é o carregamento do **Kernel** no computador.
+1) Bootstrap Program.
+2) Kernel loads.
+3) Starts system daemons (services provided outside of the kernel).
+4) Kernel interrupt driven - interruption by hardware or interruption exception by software.
 
 # Storage Structure:
-A armazenamento de dados de programa e instruções de programas é feita através de uma memória que chamamos de *Main Memory*. Geralmente possui os atributos de ser:
+O armazenamento de dados de programa e instruções de programas é feita através de uma memória que chamamos de *Main Memory*. Geralmente possui os atributos de ser:
 - *Random Access*.
 - *Volatile*.
 - Geralmente é feita através de um **DRAM** (Dynamic Random Access Memory).
 Uma forma de armazenamento conhecida como *Secondary Memory* é feita através de um componente com alta capacidade de armazenamento não volátil.
 
-Veja que podemos adicionar um *tradeoff* entre formar de armazenamento. Existem tipos de memórias mais rápidos, então podemos aplicar estratégias como **Caching**, que consiste em armazenar dados em uma forma mais rápida de armazenamento para execução mais rápida. Contudo, temos que implementar **Device Drivers** para cada componente nova que o sistema irá utilizar/gerenciar. 
+Veja que podemos adicionar um *tradeoff* entre formas de armazenamento. Existem tipos de memórias mais rápidos, então podemos aplicar estratégias como **Caching**, que consiste em armazenar dados em uma forma mais rápida de armazenamento para execução mais rápida. Contudo, temos que implementar **Device Drivers** para cada componente nova que o sistema irá utilizar/gerenciar. 
+
+Existem maneiras diferentes de armazenamento de dados persistentes, isto é, armazenamento em memória secundária. Essas maneiras são: **HDD**s(Hard Disk Drive) ou **NVM**s(Non-Volatile Memory).
+
+Além disso, a unidade básica de armazenamento não é um **bit**, mas sim um **byte**. Isto é, em nível de instrução a unidade de informação que conseguimos manipular é um **byte**. Nesse contexto, em diferentes arquiteturas de computadores podemos introduzir um conceito de **word**, que é uma palavra de memória. Pense que uma palavra de memória é a quantidade de **bits**(ou **bytes**) para expressar uma instrução para o computador, exemplo, em uma arquitetura de 32-bits o processador precisa de 32-bits para executar uma instrução, portanto, a palavra nesse caso será de 32-bits.
+**KB:** $1024$ bytes
+**MB**: $1024^2$ bytes
+**GB:** $1024^3$ bytes
+**TB:** $1024^4$ bytes
+![[Pasted image 20250910105243.png|center]]
+
+# How a Modern Computer Works:
+Um computador moderno é implementado através da arquitetura de *Von Neumann* que é representada no seguinte diagrama.
+![[Pasted image 20250910105426.png|center]]
+## Multiprogramming (Batch System).
+Múltiplos programas devem ser executados por uma **CPU**, desse modo cabe ao **OS** decidir como escolher as tarefas de modo a maximizar o tempo de execução da **CPU**. Isso será feita através de **Job Scheduling**. Por exemplo, em um contexto em que um programa deve esperar a entrada de um I/O o **OS** deve decidir trocar de tarefa.
+## Multitasking (Timesharing).
+Criar sistemas computacionais responsivos.
+- Tempo de resposta rápido o suficiente (< 1 segundo).
+- Cada usuário possui um **processo** em execução na memória.
+- O gerenciamento de execução dos processos é feito através de um **CPU Scheduling**.
+- Se o **processo** não cabe em memória -> **Swapping**.
+- A execução de um programa não é totalmente dependente do carregamento total do programa em memória -> **Virtual Memory**.
+
+# Dual-Mode Operation:
+Os Sistemas Operacionais pode se proteger de outros usuários através de uma permissão: **User Mode** ou **Kernel Mode**.
+Como garantir que a **flag** de Mode é protegida pelo **Kernel** -> Através de Syscalls que regulam esse controle.
+![[Pasted image 20250910110446.png|center]]
+Além disso, alguns sistemas computacionais podem conter um **Timer** que irá gerar interrupções para transferir a execução da CPU para Sistema Operacional.
+
+# Process Management
+Um processo é uma unidade de execução. **Programas** são entidades passivas no sistema computacional, enquanto **Processos** são unidades ativas. Isto é, **Processos** necessitam de recursos oferecidos pelo sistema computacional para realizar uma tarefa.
+**Single-Threaded** Processes possuem apenas um **Program-Counter**.
+**Multi-Threaded** Processes possuem um **Program-Counter** para cada **Thread**.
+## Process Management Activities.
+- Criar e deletar os **processos** de sistema e de usuário.
+- Suspender e Prosseguir com **processos**.
+- Garantir ferramentas para sincronização de **processos**.
+- Garantir ferramentas para comunicação de **processos**.
+- Garantir ferramentas para **deadlock handling**.
+
+## Memory Management.
+Garantir que as instruções e dados (quando necessários) estejam em memória. As atividades envolvem
+- Manter controle sobre as partes de memória em utilização e quem está utilizando.
+- Decidir quais **processos** mandem partes das instruções e dados para memória.
+- Alocar e **deadlocar** espaço de memória conforme necessário.
+
+## File-System Management.
+Garantir uma abstração de unidade de armazenamento através de arquivos. 
+Atividades envolvem:
+- Criar e deletar arquivos e diretórios.
+- Primitivas para manipular arquivos e diretórios.
+- Armazenar arquivos em memória secundária.
+### Mass-Storage Management
+Pode ser percebida a importância de guardar arquivos em memória persistente. Imagine que sempre que inicializamos um computador todos os arquivos tenham sido deletados.
+A grande questão aqui é que o **bottleneck** de execução de um computador muitas vezes está no acesso à memória persistente e seus algoritmos.
+Algumas atividades delegadas ao **OS** são:
+- Mounting and Unmounting.
+- Free-Space Management.
+- Storage Allocation.
+- Disk Scheduling.
+- Partitioning.
+- Protection.
+![[Pasted image 20250910112129.png|center]]
+
 
 # Exercícios de Revisão:
 1) Cite quais são as principais funções de um Sistema Operacional.
