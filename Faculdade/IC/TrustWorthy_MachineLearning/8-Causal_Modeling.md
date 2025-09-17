@@ -1,12 +1,12 @@
 # Contexto:
-Você atualmente deve ajudar uma empresa chamada **ABC Center** que irá orientar seus clientes a atingirem serviços sociais desejados. Os clientes dessa empresa são pessoas que necessitam de auxílio de entidades governamentais, principalmente. A questão aqui é gerenciar as pessoas para centros específicos que podem oferecer um serviço que ajude tal pessoa a sair dessa condição.
+Você atualmente deve ajudar uma empresa chamada **ABC Center** que irá orientar seus clientes a serem contemplados por serviços sociais desejados. Os clientes dessa empresa são pessoas que necessitam de auxílio de entidades governamentais. A questão aqui é gerenciar as pessoas para centros específicos que podem oferecer um serviço que ajude tal pessoa a sair dessa condição.
 Para isso, desejamos descobrir quais centros são mais adequados para cada pessoa. Desse modo, podemos avaliar a partir de dados de entrada e experiências prévias quais são os centros mais recomendados.
 
 **OBS:** Em contraste com capítulos anteriores que cobriam partes bem estreitas e específicas do processo de Machine Learning agora estamos em um contexto mais geral.
 
 ## Apresentando o problema de causalidade.
 Podemos analisar os dados anteriores para gerar *insights* sobre novos clientes. Por exemplo, uma pessoa que recebeu o serviço do **ABC Center** que consistia em um curso de reparo de carros, teve seu salário aumentado. Contudo, não podemos inferir a uma outra pessoa que esteja em situação semelhante que isso irá ocorrer. Aqui há um problema de *Causality*. Pois, não basta criar um modelo de Machine Learning para avaliar o efeito da *intervenção* do **ABC Center**. Para isso, devemos criar um **Causal Modeling**.
-O **Causal Modeling** é essencial para entendermos o mundo. Modelos de Machine Learning não nos oferecem métodos para entender esse sistema de causa-efeito.
+O **Causal Modeling** é essencial para entendermos o mundo. Modelos de Machine Learning não nos oferecem métodos para entender esse sistema de causa-efeito apenas nas questão algoritmica.
 
 A grande questão aqui é que:
 - Devemos conseguir diferenciar uma situação que necessite de **Causal-Modeling** e uma situação que entra apenas no campo de **Prediction**.
@@ -15,8 +15,9 @@ A grande questão aqui é que:
 
 # Contrast Causal Modeling and Predictive Modeling.
 *Causality* se refere como *fazer* uma ação, implicará que *outra* ação aconteça. Nesse caso, dizemos que uma ação causou a outra. Nesse sentido, dentro do contexto que estamos estudando, *causalidade* é importante pois pode alterar a probabilidade de eventos.
--> A probabilidade de chover amanhã é de 50%.
--> Agora a probabilidade de que chova amanhã deve ser maior que 50% se os 5 dias anteriores também choveram.
+-> Pessoas com maior número de calçado tem uma nota melhor na escola.
+-> Ação: Oferecer para estudantes que estejam tirando notas ruins um calçado maior.
+Veja que se analisarmos apenas a questão de *predictability* uma pessoa com maior calçado denota uma pessoa de um ano escolar maior. Portanto, podemos predizer qual deve ser a nota baseada no calçado. Mas não podemos propor como solução aumentar o calçado. A mesma situação ocorre quando estamos falando do serviço de mecânico, ele é ótimo para quem irá atuar nessa área, mas para um piloto de ônibus isso não necessariamente é melhor.
 
 **OBS:** *Causalidade* não há relação com *Correlação*. No sentido de, *Causalidade* está relacionada com eventos que são sequenciais e logicamente conectados.
 
@@ -100,3 +101,10 @@ Vamos comentar sobre alguns padrões estruturais da **Rede Bayesiana**. Esses pa
 **Confounding Bias**: é o viés introduzido justamente quando olhamos para a motivação do porquê $Pr(Y|do(t)) \neq Pr(Y|t)$. 
 
 ## Exemplo:
+
+
+---
+# Questões interessantes desse capítulo que podem ser mais investigados.
+
+1) Como adquirir um método sistemático para classificar dados entre *Interventional Data* e *Observational Data*.
+2) No caso de estarmos utilizando *Observational Data* como utilizar modelos para extrair causalidade dos modelos. Isto é, na prática, verificar a utilização de *causal discovery* e *causal inference*.
