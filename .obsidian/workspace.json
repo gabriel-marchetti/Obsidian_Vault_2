@@ -4,21 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "1e15dc8d7e04bdb5",
+        "id": "e29f81903d1d08c4",
         "type": "tabs",
         "children": [
           {
-            "id": "ff6db63af356af7f",
+            "id": "7f0125f17450d86c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Faculdade/IC/TrustWorthy_MachineLearning/8-Causal_Modeling.md",
+                "file": "Study_Techniques/Github_Student_Developer_Pack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8-Causal_Modeling"
+              "title": "Github_Student_Developer_Pack"
+            }
+          },
+          {
+            "id": "56c079a991c0cc7f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.12"
             }
           }
         ]
@@ -151,16 +163,6 @@
             }
           },
           {
-            "id": "8b6c46c401ee3002",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
             "id": "6a1b834b95c95651",
             "type": "leaf",
             "state": {
@@ -169,9 +171,29 @@
               "icon": "SpacedRepIcon",
               "title": "Notes Review Queue"
             }
+          },
+          {
+            "id": "e0e11b19a0026812",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "e8440078022b86ba",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -194,54 +216,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7c27f57ac8bcbbe7",
+  "active": "7f0125f17450d86c",
   "lastOpenFiles": [
-    "Images/Pasted image 20250905112010.png",
-    "Faculdade/IC/Reunioes_HIAAC/Reuniao_05_09_25.md",
-    "Images/Pasted image 20250905102717.png",
+    "Study_Techniques/AI_Tools_For_Students.md",
+    "Study_Techniques/Github_Student_Developer_Pack.md",
+    "Faculdade/IC/Reunioes.md",
+    "StudyTips",
     "Faculdade/IC/TrustWorthy_MachineLearning/8-Causal_Modeling.md",
-    "Images/Pasted image 20250902104351.png",
+    "Faculdade/IC/Untitled",
+    "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
     "Faculdade/IC/LogisticRegression.md",
-    "Faculdade/IC/Reunioes_HIAAC",
-    "Faculdade/IC/TrustWorthy_MachineLearning/6-Detection_Theory.md",
+    "Images/Pasted image 20250905112010.png",
+    "Images/Pasted image 20250905102717.png",
     "Images/Pasted image 20250904172659.png",
     "Images/Pasted image 20250904171259.png",
-    "Faculdade/IC/TrustWorthy_MachineLearning/7-Supervised_Learning.md",
-    "Faculdade/2025s2/MC504/Slides/Introduction.md",
     "Images/Pasted image 20250903112534.png",
     "Images/Pasted image 20250903111522.png",
     "Images/Pasted image 20250903110053.png",
-    "Faculdade/2025s2/MC504/Slides",
+    "Images/Pasted image 20250902104913.png",
+    "Images/Pasted image 20250902104351.png",
+    "Faculdade/IC/Reunioes_HIAAC/Reuniao_05_09_25.md",
+    "Faculdade/IC/Reunioes_HIAAC",
     "Faculdade/IC/Additions/GeneralPerspective_Video.md",
     "Faculdade/IC/Additions",
+    "Faculdade/2025s2/MC504/Slides/Introduction.md",
+    "Faculdade/2025s2/MC504/Slides",
+    "Faculdade/IC/Reunioes/Tarefas.md",
+    "Faculdade/IC/Reunioes",
     "Faculdade/IC/ScikitLearn_Study.md",
-    "Images/Pasted image 20250902104913.png",
-    "Faculdade/IC/LogisticRegression",
+    "Faculdade/IC/TrustWorthy_MachineLearning/6-Detection_Theory.md",
+    "Faculdade/IC/TrustWorthy_MachineLearning/5-Privacy_and_Consent.md",
+    "Faculdade/IC/TrustWorthy_MachineLearning",
     "Images/Pasted image 20250829103526.png",
-    "Images/Pasted image 20250829094417.png",
     "Faculdade/IC/ISLP/2-Statistical_Learning.md",
     "Faculdade/IC/ISLP/1-Introduction.md",
-    "Faculdade/2025s2/MC934/Gradiente_Descendente.md",
-    "Faculdade/2025s2/MC558/StevenSkiena/Graph_Transversal.md",
-    "Faculdade/2025s2/MC558/Material/Graphs.md",
-    "Faculdade/2025s2/MC558/StevenSkiena",
     "Faculdade/IC/ISLP/0-Preface.md",
     "Faculdade/IC/ISLP",
-    "Faculdade/IC/TrustWorthy_MachineLearning/5-Privacy_and_Consent.md",
     "Faculdade/2025s2/MC934/Convexidade_e_Suavidade.md",
+    "Faculdade/2025s2/MC934/Gradiente_Descendente.md",
     "Faculdade/2025s2/MC934",
-    "3D_Priting/3D_Printer_Comparison/Enders_Comparing.md",
-    "Faculdade/IC/TrustWorthy_MachineLearning/Privacy_and_Consent",
-    "Faculdade/IC/TrustWorthy_MachineLearning",
-    "Faculdade/2025s2/MC558/Material/Trees.md",
-    "3D_Priting/3D_Printer_Comparison",
+    "Faculdade/2025s2/MC558/StevenSkiena/Graph_Transversal.md",
     "Faculdade/2025s2/MC558/Estudos/Estudo1_Grafo.md",
+    "Faculdade/2025s2/MC558/Material/Graphs.md",
+    "Faculdade/2025s2/MC558/Material/Trees.md",
+    "Faculdade/2025s2/MC558/StevenSkiena",
+    "3D_Priting/3D_Printer_Comparison/Enders_Comparing.md",
     "Faculdade/IC/Python_Duvidas.md",
     "Faculdade/2025s2/MC504/OperatingSystems_ThreeEasyPieces/References.md",
-    "Faculdade/2025s2/MC458/Estudos/().md",
-    "Faculdade/2025s2/MC458/Estudos/Handshake Theorem.md",
-    "Algorithms/MC458/Lista_Teste_2/Exercise2.md",
-    "Algorithms/MC458/Lista_Teste_2/Exercise1.md",
+    "Faculdade/2025s2/MC458/Estudos/Estudo1_Grafo.md",
     "Untitled.canvas"
   ]
 }
