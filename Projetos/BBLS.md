@@ -8,6 +8,11 @@
 - Com base na mensagem podemos interpretar os sinais.
 
 # Princípios Básicos necessários para a solução.
+
+## Arquitetura da Solução:
+
+Bambu A1 Lab mini (em LAN Mode)-> transmite -> Mensagem MQTT via Wi-FI -> recebe -> Microcontrolador -> controla -> LED/LEDs.
+
 ## Princípios Eletrônicos.
 **O que é um LED e como ele funciona?** 
 - Polaridade do LED.
@@ -23,11 +28,18 @@
 ## Programação básica de microcontroladores.
 - Linguagem básica em C/C++.
 - Qual Stack é utilizada para programação de microcontroladores?
+  Parece que uma Stack comum para programação de microcontroladores é através do VSCode com a extensão PlatformIO e a simulação pode ser feita através do Wokwi.
 - Ferramentas para depuração de código de microcontroladores?
+  **JTAG** e **SWD** parecem ser ferramentas que são utilizadas para a depuração do código. 
+  **Testes unitários** podem ser desenvolvidos para verificar funcionalidades de cada função.
+  
 
 ## Comunicação em Rede (MQTT).
 - O que é o protocolo MQTT.
 - Pesquisar materiais como "Comunicação MQTT com ESP32/Arduino".
+
+Um sistema MQTT 
+
 
 # Passo-a-Passo para solução do Problema.
 Na impressora:
@@ -35,5 +47,4 @@ Na impressora:
 2) Encontrar o IP e Access Code da impressora.
 O Circuito:
 3) Conectar cada LED a um GPIO da ESP32.
-4) 
 
