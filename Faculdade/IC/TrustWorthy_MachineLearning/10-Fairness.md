@@ -83,6 +83,8 @@ Portanto, o modelo deve ter e buscar **SPD** próximo de 0.
 $$
 DIR = \frac{Pr(\hat{y}(X) = \text{fav} | Z = \text{unpr})}{Pr(\hat{y}(X) = \text{fav} | Z = \text{priv})}
 $$
+Nesse caso, queremos que $DIR$ se aproxime de 1.
+
 ---
 Divagação...
 $$
