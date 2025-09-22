@@ -23,3 +23,66 @@ Quando desejamos aplicar um método para de aprendizado estatístico, desejamos 
 - Aqui parece que a discussão tem muito a ver com a discussão feita no *Trustworthy Machine Learning* sobre a questão de **Aleatoric Uncertainty** e **Epistemic Uncertainty**. A questão aqui é que o erro aleatório não pode ser reduzido, enquanto o erro epistêmico está mais relacionado com erros de conhecimentos não inseridos no seu modelo, então há sim uma clara relação entre **Epistemic Uncertainty $\approx$ Reducible Error** e **Aleatoric Uncertainty $\approx$ Irreducible Error**.
 
 **Inference:**
+	Aqui **NÃO** podemos tratar a $\hat{f}(X)$ como **Caixa-Preta**, porque precisamos saber sua forma exata para extrair informações. Existe um grupo de perguntar que entra no campo de inferência.
+- Quais **Preditores** estão associados com a **Resposta** do sistema?
+- Qual a relação com cada **Preditor** e a variável de **Resposta**?
+- Qual função pode ser utilizada para sumarizar a relação entre **Preditor** e **Resposta**?
+
+**Exemplos**:
+- Uma campanha de Marketing decide pesquisar se determinados anúncios serão bem vistos pelos seus clientes. Desse modo, apenas desejamos uma resposta boa -> **Prediction**.
+Já algumas perguntar relacionadas com a imagem mostrada em cima podem ser:
+- Qual canais de comunicação estão associados com venda?
+- Qual dos canais gera mais resposta em vendas?
+Essas questões entram no campo de **Inference**.
+- Qual será o aumento de valor nessa casa, caso ela tenha vista para um rio? (**INFERENCE**).
+- Essa casa está abaixo ou acima do seu valor de mercado? (**PREDICT**).
+
+# How do we estimate f?
+Queremos encontrar $\hat{f}(\cdot)$ tal que $Y \approx \hat{f}(X)$. Para isso podemos utilizar duas abordagens: **Parametric Methods** e **Non-parametric Methods**.
+
+## Parametric Methods.
+1) Assuma uma forma para $f(\cdot)$
+2) Use os dados de **Treino** para treinar (*fit/train*) à fim de estimar os parâmetros.
+
+**Exemplo (Regressão Linear)**.
+Assuma que:
+$$
+f(X) = \beta_{0} + \beta_{1} \cdot X_{1} + \cdots + \beta_{p} \cdot X_{p}
+$$
+Treine os parâmetros de modo que:
+$$
+Y \approx f(X)
+$$
+O método mais comum para a **regressão linear** é o **Ordinary Least Squares**. 
+
+Veja que fizemos um **Desvio de Problema**. Antes o problema era encontrar uma $f(\cdot)$ que descrevesse o fenômeno observado. Agora o problema é um problema de **Otimização**. 
+### Problemas da Abordagem Paramétrica:
+- Assumir é uma responsabilidade grande, pois isso determinará o formato da função de predição. Veja que isso pode implicar em uma estimativa ruim caso a função fornecida seja distante da função real.
+- Aqui temos um *tradeoff* entre **Flexibilidade vs Explicabilidade**.
+- Um modelo muito flexível pode gerar **Overfitting**.
+
+**OBS**:
+O modelo linear pode ser utilizado para propor ajustes em *datasets* com poucos dados.
+
+## Non-parametric Methods.
+Não assumimos uma forma concreta para a função de $f(\cdot)$. A vantagem clara aqui é que modelos nessa categoria conseguem capturar um conjunto muito maior de situações distintas. 
+
+### Problemas da Abordagem Não-Paramétrica:
+- Um número muito grande de *datapoints* deve ser usado para garantir convergência estimativa da função $f(\cdot)$, pois não assumimos forma concreta dela.
+
+Algumas abordagens são:
+- *Thin-Plate Spline*.
+![[Pasted image 20250919182709.png|center]]
+Veja que nesse caso cada ponto do treino é utilizado para invocar uma leve curvatura na sua vizinhança. Esses métodos de **Splines** possuem a configuração de suavidade do modelo. 
+
+# Trade-Off entre Acurácia e Explicabilidade.
+**Pergunta**: Se podemos escolher métodos mais flexíveis, porque devemos pensar em escolher métodos mais restritos? 
+- Em inferência, modelos mais restritivos são melhor interpretáveis.
+![[Pasted image 20250919183407.png|center]]
+A imagem apresenta justamente o **Trade-Off** entre **Flexibilidade e Interpretabilidade**. 
+
+**Lasso:** É um modelo que atua como uma regressão linear, contudo tenta tornar alguns parâmetros para o número zero. Contudo, é super interpretável, pois teremos um conjunto menor de parâmetros.
+**GAMs (Generalized Additive Models)**: Amplia o campo da regressão linear, introduzindo algumas não-linearidades.
+
+Além disso, mesmo os modelos mais flexíveis podem acabar tendo problemas mesmo em configuração de predição. 
+> Em algumas situações um modelo mais restritivo gera um aumento da acurácia.

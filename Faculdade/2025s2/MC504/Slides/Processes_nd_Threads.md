@@ -25,7 +25,7 @@ Um processo é uma unidade de computação que executa de maneira sequencial. É
 - **Heap** : Contém memória dinamicamente alocada em tempo de execução.
 - **Data Section** : Contém variáveis globais.
 
-O contexto geral que temos é que um programa está armazenada em algum dispositivo de **Armazenamento de Arquivos**. Assim, quando acionamos algum mecanismo de execução de arquivo ,como a execução de algum script no shell ou através do click do mouse, então a entidade passa a ser um **processo**. Nesse sentido, ela está alocada em memória e possui as estruturas apresentadas acima. 
+O contexto geral que temos é que um programa está armazenada em algum dispositivo de **Armazenamento de Arquivos**. Assim, quando acionamos algum mecanismo de execução de arquivo ,como a execução de algum script no shell ou através do click do mouse, a entidade passará a ser um **processo**. Nesse sentido, ela está alocada em memória e possui as estruturas apresentadas acima. 
 Pense que essa relação pode ser de um para muitos, pois um programa pode originar diversos processos. Pense em um programa de consulta de banco de dados com diversos usuários.
 ![[Pasted image 20250916163346.png|center]]
 Desse modo, podemos gerar um esquema de conversão de um código C para uma estrutura como a apresentada acima.
@@ -132,3 +132,163 @@ Conceito de processos orphan e zombie:
 **Zombie Process**: Processo invoca a função $\texttt{exit()}$, mas seu pai ainda não invocou a função $\texttt{wait()}$.
 **Orphan Process**: Processo invoca a função $\texttt{exit()}$, mas seu pai já está em status de terminated.
 
+- Uma regra que pode ser utilizada por SO's é a seguinte: Processos **Parent** só podem ser finalizados se **NÃO** existirem processos **Child**. Essa regra gera o efeito de **Cascading** entre processos. 
+
+# Interprocess Communication.
+**Processos** podem ser **Cooperativos** ou **Independentes**. Mas além disso, existem diversas razões para a **Cooperação** entre **Processos**. Elas podem ser **Compartilhamento de informações**, **Computation Speedup**, **Modularity**, **Convenience**. As políticas de **IPC** são **Shared Memory** e **Message Passing**.
+![[Pasted image 20250920175226.png|center]]
+Um novo paradigma é introduzido aqui: **Producer-Consumer Problem**.
+**Unbounded-Buffer**. -> Processos produtores não precisam aguardar a alocação no buffer. Consumidores apenas aguardam quando não há mensagem.
+**Bounded-Buffer**. -> Processos produtores e consumidores podem aguardar na alocação/consumo dos dados.
+
+**PROBLEMA**: A questão aqui é que essas questões são orquestradas pelos usuários, então o SO não consegue garantir sincronização.
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <sys/shm.h>
+#include <sys/stat.h>
+#include <sys/mman.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <time.h>
+
+#define BUFFER_SIZE 16
+const char *SHM_NAME = "/prodcons_shm";
+
+typedef struct
+{
+    int id;
+} item;
+
+typedef struct 
+{
+    item buffer[BUFFER_SIZE];
+    int in;
+    int out;
+} SharMem;
+
+int main()
+{
+    pid_t pid;
+    int shm_fd;
+    SharMem *sh_data;
+
+    shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
+    if(shm_fd == -1)
+    {
+        perror("shm_open");
+        return 1;
+    }
+
+    if(ftruncate(shm_fd, sizeof(SharMem)) == -1)
+    {
+        perror("ftruncate");
+        return 1;
+    }
+
+    sh_data = mmap(0, sizeof(SharMem), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    if(sh_data == MAP_FAILED)
+    {
+        perror("mmap");
+        return 1;
+    }
+
+    sh_data->in = 0;
+    sh_data->out = 0;
+
+    pid = fork();
+    if(pid < 0)
+    {
+        perror("fork");
+        munmap(sh_data, sizeof(SharMem));
+        shm_unlink(SHM_NAME);
+        return 1;
+    }
+    else if(pid > 0)
+    {
+        printf("[PRODUTOR] Processo Pai (PID: %d) Iniciado\n", getpid());
+        srand(time(NULL));
+
+        for(int i=0; i < 20; i++)
+        {
+            item next_prod;
+            next_prod.id = rand() % 1000;
+
+            while((sh_data->in + 1) % BUFFER_SIZE == sh_data->out)
+            {
+                // Busy-Waiting.
+            }
+
+            sh_data->buffer[sh_data->in] = next_prod;
+            sh_data->in = (sh_data->in + 1) % BUFFER_SIZE;
+            printf("[PRODUTOR] Processo Pai Produziu Item: #%d. Buffer: %d/%d\n", next_prod.id, sh_data->in, sh_data->out);
+            usleep(500000);
+        }
+
+        wait(NULL);
+        printf("[PRODUTOR] Finalizando...\n");
+
+        munmap(sh_data, sizeof(SharMem));
+        shm_unlink(SHM_NAME);
+        printf("[PRODUTOR] Memória Limpada...\n");
+    }
+    else
+    {
+        printf("[CONSUMIDOR] Processo Filho (PID %d) Iniciado\n", getpid());
+
+        for(int i=0; i < 20; i++)
+        {
+            item next_cons;
+            while(sh_data->in == sh_data->out)
+            {
+                // Busy-Waiting.
+            }
+
+            next_cons = sh_data->buffer[sh_data->out];
+            sh_data->out = (sh_data->out + 1) % BUFFER_SIZE;
+
+            printf("[CONSUMIDOR] Consumiu Item #%d. Buffer: %d/%d\n", next_cons.id, sh_data->in, sh_data->out);
+            usleep(750000);
+        }
+
+        printf("[CONSUMIDOR] Finalizado...\n");
+        munmap(sh_data, sizeof(SharMem));
+    }
+
+    return 0;
+}
+```
+O trecho de código é utilizado para criar um processo **Consumidor** e outro processo **Produtor** através de uma fila de espera e **Busy-Waiting**. 
+**OBS:** Adicionar descrição passo-a-passo do processo.
+Contudo, aqui criamos uma **Condição de Corrida** como mostrado no seguinte trecho da saída no terminal.
+```
+[PRODUTOR] Processo Pai (PID: 6291) Iniciado
+[CONSUMIDOR] Processo Filho (PID 6292) Iniciado
+[CONSUMIDOR] Consumiu Item #511. Buffer: 1/1
+[PRODUTOR] Processo Pai Produziu Item: #511. Buffer: 1/0
+[PRODUTOR] Processo Pai Produziu Item: #757. Buffer: 2/1
+```
+Veja que o item 511 foi primeiro consumido e depois produzido. Isso acontece por conta de uma condição de corrida do print. Contudo, nesse método estamos desperdiçando uma posição de memória que nunca será utilizada para justamente garantir a sobreposição dos ponteiros.
+
+**Outro método**:
+Podemos fazer esse controle através de uma **Counter** que conta a quantidade de processos na produzidos e os consumidos.
+Para isso podemos encapsular a variável counter dentro do campo de **Shared Data**.
+
+```C
+typedef struct
+{
+    int id;
+} item;
+
+typedef struct 
+{
+    item buffer[BUFFER_SIZE];
+    int in;
+    int out;
+    int counter;
+} SharMem;
+```
+E o controle é feito através desse **Counter**. Contudo aqui ainda pode ocorrer uma **Condição de Corrida**.
+
+# Interprocess Communication - Message Passing.

@@ -99,3 +99,9 @@ OBS:
 	**Registradores da CPU**.
 **Estado do Processo**:
 	Novo, Pronto, Em execução, esperando e terminado.
+
+**Nova Resposta**:
+Um processo pode ser entendido como uma instanciação de um programa dentro do sistema computacional. Desse modo, o programa é dividido em diversos segmentos como *Text Section*, *Data Section*, *Heap*, *Stack* e *Program Counter*, contudo essas são informações que o processo armazena sobre o processo. Agora precisamos olhar na perspectiva do SO, as informações úteis para o sistema operacional são: *PID*(Process ID), *Estado do Processo* (Novo, Pronto, Ex execução, Em espera, Finalizado), *Arquivos abertos*, *Informações sobre gerenciamento de memória*, *Estado dos registradores*, *Configurações para o escalonamento de processos*, *Status dos dispositivos de I/O* e entre outros. Todas essas informações são armazenadas dentro do **PCB**.
+
+#### Exercício 6)
+**Pergunta:** Quando um processo é dividido em várias threads, algumas das informações armazenadas sobre o processo são compartilhadas entre todas as threads, e outras são replicadas e armazenadas para cada uma das threads do processo. Dê exemplos de informações para os dois casos
