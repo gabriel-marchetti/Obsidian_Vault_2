@@ -108,6 +108,27 @@
         "type": "FILES",
         "pattern": "Projetos/ToC.md",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Pessoal/Leituras/Carreira/Content_Guide.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Pessoal/Videos_assistidos/ToC.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Faculdade/IC/Papers/ToC.md",
+        "patternType": "STRICT"
       }
     ]
   },
