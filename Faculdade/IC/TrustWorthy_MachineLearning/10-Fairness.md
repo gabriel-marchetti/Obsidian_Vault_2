@@ -1,35 +1,35 @@
 # Contexto:
-**Sospital** é uma agência de *health insurance* nos EUA. Você deve ajudar o *problem owner* a encarar a tarefa de automatização da escolha de pacientes que devem fazer parte do sistema de **Care Management**.
+**Sospital** é uma agência de *health insurance* nos EUA. Você deve ajudar o *problem owner* a encarar a tarefa de automatização da escolha de pacientes que devem fazer parte do sistema de **Extra Health Care Management**.
 **Care Management**: Se trata de um setor de diversos profissionais que atuam em conjunto para tratar de modo preventivo situações crônicas ou situações complexas.
 
 **Problema principal**: Automatizar um processo que é feito principalmente de modo manual para escolha de pacientes que devem fazer parte desse programa.
-Contudo, você como um bom projetista de sistemas de *machine learning*, começa a consultar os diferentes *stakeholders*. Nesse sentido, uma rápida entrevista com pacientes **negros** possibilitou identificar uma desconfiança com os planos de saúde que não estão oferecendo esses serviços de modo satisfatório para essa população.
+Contudo, você como um bom projetista de sistemas de **Machine learning**, começa a consultar os diferentes **Stakeholders**. Nesse sentido, uma rápida entrevista com pacientes **Negros** possibilitou identificar uma desconfiança com os planos de saúde que não estão oferecendo esses serviços de modo satisfatório para essa população.
 
 > O Sistema precisa ser justo e não conter viés indesejado.
 
-**Solução**: Projetar uma solução que considere, através da fase de *problem specification*, um modelo *fair* para alocação de recursos dentro do *Care Management* para a empresa **Sospital**.
-- Comparar as diferentes definições de *fairness* no contexto de *machine learning*.
+**Solução**: Projetar uma solução que considere, através da fase de **Problem Specification**, um modelo **Fair** para alocação de recursos dentro do **Care Management** para a empresa **Sospital**.
+- Comparar as diferentes definições de **Fairness** no contexto de **Machine Learning**.
 - Selecionar a definição que mais se adequa ao problema.
-- Mitigar viés indesejado através de uma fase de modelagem que considere questões de *fairness*.
+- Mitigar viés indesejado através de uma fase de modelagem que considere questões de **Fairness**.
 
 **Perguntas Iniciais**:
-- Por que existem diferentes tipos de definições de *fairness*?
+- Por que existem diferentes tipos de definições de **Fairness**?
 - Como uma definição específica se adequará a um tipo específico de problema?
 - Como garantir que viés indesejado não seja introduzido na fase de modelagem.
 
-# Diferentes definições de *Fairness*.
-Existem diferentes tipos de *fairness* justamente pela dificuldade de conseguir modelar sem o contexto social explícito. Além disso, como diferentes situações sociais geram diferentes respostas à questões de desigualdade, então não é muito viável apresentar uma definição técnica. Apesar disso, o tratamento de *fairness* dentro do contexto de solução para sistemas de *machine learning* apresentará uma robustez técnica.
+# Diferentes definições de Fairness.
+Existem diferentes tipos de **Fairness** justamente pela dificuldade de conseguir modelar sem o contexto social explícito. Além disso, como diferentes situações sociais geram diferentes respostas à questões de desigualdade, então não é muito viável apresentar uma definição técnica. Apesar disso, o tratamento de **Fairness** dentro do contexto de solução para sistemas de **Machine Learning** apresentará uma robustez técnica.
 
 Veja que a definição de um sistema *fair* possuir diversas ramificações
-1) Um sistema pode prezar pela *equality* de serviços oferecidos por diferentes grupos - *distributive justice*.
-2) Um sistema pode prezar por escolher de modo similar entre diferentes grupos - *procedural justice*.
+1) Um sistema pode prezar pela *equality* de serviços oferecidos por diferentes grupos - **distributive justice**.
+2) Um sistema pode prezar por escolher de modo similar entre diferentes grupos - **procedural justice**.
 3) Um sistema pode prezar por optar por situações de reparo - **restorative justice**.
 4) Um sistema pode introduzir justiça penalizando pessoas que tomam ações erradas - **retributive justice**.
 
 Uma *Rule of Thumb* é sempre fazer o design de um sistema através de *distributive justice*, pois a maioria dos sistemas focam apenas no contexto de analisar fins de uma determinada ação (Por que isso garante que *distributive justice* é uma escolha boa?). Isto é, a pessoa recebe o benefício de receber o serviço e pronto. Veja que a adição desses outros tipos de *justice* podem ajudar a descobrir onde certos sistemas podem ser inseridos e onde não podem ser inseridos.
 **OBS**: Acho que no trabalho do *Caio* a ideia de atribuir empréstimos para as pessoas é mais guiado pela política de *retributive justice*. Então podemos perceber um contexto em que *distributive justice* não se insere bem. 
 **OBS**: Eu não entendi como isso acontece muito bem, porque se você fizer *retributive justice* e um determinado grupo tiver mais probabilidade de fazer ações erradas, então eles não serão incluídos na distribuição. Assim isso acaba afetando *distributive justice*. É isso?
-O que eu quero dizer é: Um tipo de *fairness* impacta o outro tipo de *fairness*.
+O que eu quero dizer é: Um tipo de **Fairness** impacta o outro tipo de **Fairness**.
 
 Pensando na questão do serviço oferecido pelo **Sospital**, como são recursos limitados o mais correto não seria introduzir *procedural justice*?
 - Mas outra pessoa poderia introduzir a questão de oferecer o serviço para pessoas mais afetadas por uma questão - *restorative justice*.
@@ -206,8 +206,8 @@ Existem métodos para mitigar bias para as três fases principais de um modelo d
 
 Para escolher um algoritmo de *bias mitigation* você deve:
 1) Saber em que parte do pipeline você irá atuar.
-2) Considerar a sua visão de mundo (We're all the same or We are what you see).
-3) Entender se atributos protegidos serão usados como *features*.
+2) Considerar a sua visão de mundo (**We're all the same** or **We are what you see**).
+3) Entender se atributos protegidos serão usados como **Features**.
 
 ![[Pasted image 20250925201939.png|center]]
 
