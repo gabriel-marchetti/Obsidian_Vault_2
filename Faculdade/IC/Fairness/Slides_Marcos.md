@@ -40,3 +40,14 @@ Podemos introduzir **Bias** dentro da fase de **Problem Specification** e **Data
 # Distribution Shift and Fairness.
 - O **Distribution Shift** é mais utilizado quando temos acesso imediato ao *Construct Space*.
 - Em um cenário de **Fairness** é impossível ter acesso ao *Construct Space*. Portanto, lidamos com **Fairness** através de políticas e métricas quantitativas.
+
+- Accuracy.
+- Precision.
+- Recall.
+- F1-Score.
+- AUC -> ROC-curve.
+- Calibration Curve -> Brier-Score.
+# Exemplo computar Recall e Precision:
+**Precision**: $n_{TP} >> n_{FP}$, isto implica que desejamos classificar emails como spam apenas quando temos certeza da decisão.
+**Recall**: $n_{TP} >> n_{FN}$, isto implica que desejamos classificar emails spam como spam, sem nos preocupar tanto com a taxa dos verdadeiros.
+
