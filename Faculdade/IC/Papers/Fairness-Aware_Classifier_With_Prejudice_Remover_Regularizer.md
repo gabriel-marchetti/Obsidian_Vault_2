@@ -12,7 +12,7 @@ OBS: Five-Fold Cross-Validation.
 ![[Pasted image 20251008111141.png|center]]
 ```
 Acc (Acurárica) : Maior é melhor
-NMI (Normalized Mutual Information) : 
+NMI (Normalized Mutual Information) : Maior é pior.
 NPI (Normalized Prejudice Index) : Maior é pior.
 UEI (Underestimation Index) : Maior é pior.
 CVS (Calders Verwer Score) : Maior é pior.
@@ -31,3 +31,13 @@ OBS: Comparação geral dos métodos (Muitos valores do CV2NB não podem ser vis
 OBS: Escala log no eixo vertical.
 
 **Questão**: Qual a vantagem do $PR$ sobre o modelo $CV2NB$ ? Parece que o $PR$ consegue levar em conta o efeito de cada feature sobre a informação sensível. - Experimento com dados sintéticos.
+
+$$
+R_{PR} (D, \Theta) = \sum_{(x_i, s_i) \in D} \left[ 1 - \sigma(x_i^Tw)\right] \left[ \frac{\hat{Pr}(y=0|S=s_i)}{\hat{Pr}(y=0)}\right] + \left[ - \sigma(x_i^T w)\right] \left[ \frac{\hat{Pr}(y=1|S=s_i)}{\hat{Pr}(y=1)}\right]
+$$
+$$
+\hat{Pr}(y|s) \approx \sum_{(x_i, s_i) \in D} \frac{M[y|x_i,s_i;\Theta]}{|\{ (x_i, s_i) \in D , s_i=s\}|}
+$$
+$$
+\hat{Pr}(y) \approx \sum_{(x_i, s_i) \in D}\frac{M[y|x_i, s_i;\Theta]}{|D|}
+$$

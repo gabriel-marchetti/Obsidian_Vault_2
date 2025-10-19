@@ -14,6 +14,8 @@ Após isso as modificações foram:
 - Implementar outras métricas de fairness como APVD (Average Predictive Value Difference).
 - Comparar o resultado do meu LogisticRegression com o LogisticRegression de outro pacote como o scikit-learn.
 - Implementar Intersectional Group Fairness.
+- Ver como AOD está relacionado com Mutual Information.
+- USAR AUC.
 
 **Dúvidas**:
 - Qual a diferença entre sufficiency e separation?

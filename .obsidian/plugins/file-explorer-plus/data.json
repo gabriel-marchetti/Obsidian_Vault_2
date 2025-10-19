@@ -129,6 +129,13 @@
         "type": "FILES",
         "pattern": "Faculdade/IC/Papers/ToC.md",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Obsidian/ToC.md",
+        "patternType": "STRICT"
       }
     ]
   },
