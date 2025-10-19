@@ -9,7 +9,7 @@ tags:
 FlashCard example:
 
 Search lines for a specific input ;; grep
-<!--SR:!2025-05-08,1,230-->
+<!--SR:!2025-10-22,3,250-->
 Display file content on the terminal ;; cat
-<!--SR:!2025-05-11,4,270-->
+<!--SR:!2025-11-03,15,290-->
 
