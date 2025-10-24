@@ -1,0 +1,4 @@
+Eu fui tentar ver alguns vídeos sobre o JAX. Segue o histórico de vídeso que foram assistidos.
+- Eu assisti o vídeo de introdução do [[Jake-VanderPlas]] introduzindo alguns aspectos do JAX em [[Intro-to-Jax-by-TensorFlow]]. Em que é comentada algumas áreas de aplicação do JAX, assim como alguns detalhes de implementação sobre uma forma intermediária de representar o código python para otimizações com o Just-In-Time, Audodiff e XLA.
+- Eu assisti o vídeo de introdução do [[Laurence-Moroney]] que dá uma contextualizada até que legal sobre o JAX em [[What-is-Jax-by-Google-Research]]. A coisa mais interessante desse vídeo é o fato dele dar uma justificativa para o nome JAX (Just-in-time, Autodiff, XLA).
+- Um vídeo muito parecido com o anterior (até pelo apresentador) é o [[Who-uses-JAX-by-Google-Research]]. Que só comenta algumas aplicações em que o JAX usa, além de comentar sobre o autodiff forward e reverse.

@@ -1,0 +1,1 @@
+Ele tem uma página pessoas nesse link: https://laurencemoroney.com/

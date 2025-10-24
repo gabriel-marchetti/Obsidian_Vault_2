@@ -1,0 +1,1 @@
+Ele apresenta o vídeo dentro do canal do TensorFlow sobre o JAX e descobrir ele inicialmente através do vídeo em: [[Intro-to-Jax-by-TensorFlow]]

@@ -7,5 +7,7 @@
 - [[The_7_Levels_of_Applied_Mathematics]] 
 **Dia 30-09-2025:**
 - [[O_Unico_Guia_Que_Voce_Precisa_para_Criar_Jogos]]  
+**Dia 24-10-2025:**
+- [[Why-Your-Machine-Learning-Projects-Wont-Land-You-a-Job]]
 
 ****

@@ -134,6 +134,34 @@
         "name": "",
         "active": true,
         "type": "FILES",
+        "pattern": "Pessoal/Inspiracoes/Cpp/ToC.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "C++/Abdul_Bari_Udemy/Course_Observations.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "C++/Abdul_Bari_Udemy/Essential_Fundamentals/ToC.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "DIRECTORIES",
+        "pattern": "Daily-Notes",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
         "pattern": "Obsidian/ToC.md",
         "patternType": "STRICT"
       },
@@ -142,6 +170,13 @@
         "active": true,
         "type": "FILES",
         "pattern": "To-Do.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Faculdade/IC/JAX/Context.md",
         "patternType": "STRICT"
       }
     ]
