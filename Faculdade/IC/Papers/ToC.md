@@ -3,3 +3,6 @@
 
 **Dia 08-10-2025:**
 [[Fairness-Aware_Classifier_With_Prejudice_Remover_Regularizer]] : Introduz um método In-Processing para redução de disparidade. Tem uma abordagem matemática mais suscinta, mas apresenta resultados de modo claro. Além disso apresenta um paradigma bom dos problemas de classificadores enviesados.
+
+**Dia 28-10-2025**:
+[[Minimax-Pareto-Fairness-A-Multi-Objective-Perspective]] 
