@@ -9,5 +9,11 @@
 - [[O_Unico_Guia_Que_Voce_Precisa_para_Criar_Jogos]]  
 **Dia 24-10-2025:**
 - [[Why-Your-Machine-Learning-Projects-Wont-Land-You-a-Job]]
+**Dia 27-10-2025:**
+- [[I-Gave-2-Hours-Daily-to-DSA]]
+- [[Como-aprender-a-programar-tao-rapido-que-parece-impossivel]]
+- [[Books-Junior-Developers-Need-To-Read]]
+- 
+
 
 ****
