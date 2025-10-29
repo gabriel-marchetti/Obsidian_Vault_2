@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiCpuLine",
-      "LiMove3d",
-      "LiUniversity",
-      "SiCsharp",
-      "🏢"
+      "SiObsidian",
+      "LiApple",
+      "🏗",
+      "FasImagePortrait",
+      "LiPersonStanding"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,11 @@
   "CSharp": "SiCsharp",
   "Faculdade": "LiUniversity",
   "3D_Priting": "LiMove3d",
-  "Embedded_Systems": "RiCpuLine"
+  "Embedded_Systems": "RiCpuLine",
+  "Gaming": "RiGameFill",
+  "Pessoal": "LiPersonStanding",
+  "Pessoas-Importantes": "FasImagePortrait",
+  "Projetos": "🏗",
+  "Conceitos": "LiApple",
+  "Obsidian": "SiObsidian"
 }

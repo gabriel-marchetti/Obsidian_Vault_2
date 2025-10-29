@@ -18,6 +18,8 @@
 - [[I-feel-like-i-cant-code-without-AI]] 
 - [[A-pilha-de-tecnologia-para-ganhar-dinheiro]] 
 - [[why-programmers-from-90s-are-legends]] 
+**Dia 29-10-2025**:
+- [[how-to-play-retro-games-on-a-laptop]] 
 
 
 ****
