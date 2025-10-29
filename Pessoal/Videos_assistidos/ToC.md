@@ -13,7 +13,11 @@
 - [[I-Gave-2-Hours-Daily-to-DSA]]
 - [[Como-aprender-a-programar-tao-rapido-que-parece-impossivel]]
 - [[Books-Junior-Developers-Need-To-Read]]
-- 
+**Dia 28-10-2025:**
+- [[Como-eu-escaparia-do-inferno-dos-tutoriais-em-14-dias]]
+- [[I-feel-like-i-cant-code-without-AI]] 
+- [[A-pilha-de-tecnologia-para-ganhar-dinheiro]] 
+- [[why-programmers-from-90s-are-legends]] 
 
 
 ****
