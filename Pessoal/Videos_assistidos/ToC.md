@@ -20,6 +20,6 @@
 - [[why-programmers-from-90s-are-legends]] 
 **Dia 29-10-2025**:
 - [[how-to-play-retro-games-on-a-laptop]] 
-
+- [[aprender-programacao-e-bem-facil-na-real]] 
 
 ****
