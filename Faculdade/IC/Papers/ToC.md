@@ -6,3 +6,6 @@
 
 **Dia 28-10-2025**:
 [[Minimax-Pareto-Fairness-A-Multi-Objective-Perspective]] 
+
+**Dia 04-11-2025**:
+[[minimax-group-fairness-algorithms-nd-experiments]]
