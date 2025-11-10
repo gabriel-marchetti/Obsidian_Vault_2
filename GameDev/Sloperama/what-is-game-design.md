@@ -2,9 +2,10 @@ Game design é um subconjunto de Game Development. O Game Designer se preocupa m
 
 Aprofundando mais sobre o Game Development, áreas como Programação, Arte, Teste e Áudio fazem parte do arcabouço do desenvolvimento de jogos. Nesse sentido, veja que Game Design está englobado dentro de Desenvolvimento de Jogos. O caminho inverso não é verdade.
 
-O principal papel de um Game Designer é ser um orador da ideia do jogo. Seja através de escrita ou por voz, o Game Designer é quem idealiza um jogo. Veja que nesse sentido, é extremamente importante ouvir as ideias que pessoas podem sugerir. 
+O principal papel de um Game Designer é ser um orador da ideia do jogo. Seja através de escrita ou por voz, o Game Designer é quem idealiza um jogo. Veja que nesse sentido, é extremamente importante ouvir as ideias que pessoas podem sugerir e avaliar o que há de útil combinando o estado atual do jogo. 
 
 Pense o seguinte: Um Game Designer precisa ser alguém que criará experiências para outras pessoas. Portanto, não há conhecimento suficiente que englobe criar uma experiência única e nova para as pessoas. Além disso, note que ideias novas para jogos são incrivelmente baratas hoje em dia, você já deve ter pensado em alguma ideia de jogo na sua vida, imagine agora com um conjunto de 50 pessoas quantas ideias devem surgir. Então, qual o grande valor de um Game Designer? Basicamente, montar Sistemas, Mecânicas e Levels dentro de um jogo. Veja que nesse processo avaliar criteriosamente críticas e introspecção é uma habilidade super importante. 
+Não destaquei aqui uma coisa importante: Um Game Designer não deve se apegar a suas ideias, a sua ideia de jogo deve ser reavaliada diversas vezes e ouvir críticas é uma das etapas mais importantes do processo.
 
 Game Designers são pessoas que conseguem avaliar um jogo de modo mais crítico.
 -> Qual o mecanismo que esse jogo usa?
@@ -22,7 +23,7 @@ Principais Habilidades.
 - Literatura, Mitologia e Mitos.
 - Conhecer sobre as religiões pelo mundo.
 - Habilidades de Script e Programação.
-- Princípios de Arte.
-- Conhecimento sobre música e áudio.
+- Princípios de Arte - Avaliar essas questões dentro de Artes.
+- Conhecimento sobre música e áudio - Audio design e music principles.
 - Graphic Design.
 - Played Games for reference.

@@ -193,15 +193,15 @@
       "color": "Aj8YUU7QOJleocfBX_tDq"
     },
     {
-      "path": "GameDev/Sloperama/Game Design 101.md",
+      "path": "GameDev/Sloperama/i-have-a-game-idea.md",
       "color": "Aj8YUU7QOJleocfBX_tDq"
     },
     {
-      "path": "GameDev/First Steps Into Making Games.md",
+      "path": "GameDev/first-steps-into-making-games.md",
       "color": "Aj8YUU7QOJleocfBX_tDq"
     },
     {
-      "path": "GameDev/Sloperama/What Is Game Design.md",
+      "path": "GameDev/Sloperama/what-is-game-design.md",
       "color": "Aj8YUU7QOJleocfBX_tDq"
     },
     {
@@ -387,6 +387,14 @@
     {
       "path": "Projetos",
       "color": "e1NzmoGnOD64JmCXlnUxL"
+    },
+    {
+      "path": "Vim",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
+    },
+    {
+      "path": "Assembly",
+      "color": "Aj8YUU7QOJleocfBX_tDq"
     }
   ]
 }

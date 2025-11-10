@@ -1,5 +1,5 @@
 1. DIY - Write a GDD (Game Design Document) and try executing your idea.
-2. DIFT - Work for someone about an idea.
+2. DIFTI (Do it from the inside) - Work for someone about an idea.
 
 A primeira coisa que deve ser feita é escrever sobre o game design. Você pode utilizar esse design para criar o seu próprio jogo ou ainda usar essa ideia para trabalhar como um game designer. 
 

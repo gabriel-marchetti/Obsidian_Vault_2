@@ -1,0 +1,1 @@
+Criador do LLVM utilizado dentro do compilador Clang.
