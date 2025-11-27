@@ -1,0 +1,1 @@
+Link: https://allowe.com/games/game-designs.html

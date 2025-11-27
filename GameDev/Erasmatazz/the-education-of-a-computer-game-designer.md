@@ -1,0 +1,1 @@
+Link: https://web.archive.org/web/20100610042614/http://www.erasmatazz.com/page78/page117/page123/Education.html
