@@ -46,6 +46,95 @@ Link: https://userpages.umbc.edu/~akmassey/posts/2012-02-15-advice-on-reading-ac
 
 **Motivation**: importance of scientific papers - they change the way authorities and procedures are made to influence people's life. So there is a importance in identifying **Scientific Authority**.
 - How to know if something is proved? Literature.
-- How to know if something is important? Papers.
+- How to know if something is a recent discovery? Papers.
 But papers are **Dense**, have **stilted (unnatural) writing** and **unfamiliar jargon**.
 
+## Before you read the paper:
+1) Take notes about **Authors** and **Institutional affiliations**.
+2) Take notes about the **Journal**.
+3) Prepare a paper to write every single word that you don't understand.
+## Steps to read the paper:
+1) Begin reading the **Introduction** (not the **Abstract**).
+	1.a) You might get biased by reading the **Abstract**.
+2) Identify the **BIG QUESTION** about the research topic.
+	2.a) What is the problem this field is trying to answer.
+3) Summarize the **Background** about the **BIG QUESTION** in five sentences or less.
+	3.a) What is the work previously done on this area such that this paper is being made.
+	3.b) What were the limitations of that work.
+	3.c) What needed to be done next?
+4) Identify **SPECIFIC QUESTIONS** that this paper tries to answer.
+	4.a) What are they trying to answer.
+	4.b) Which hypothesis are being tested.
+5) Identify the approach taken.
+	5.a) How the **SPECIFIC QUESTIONS** are being answered.
+6) Read **Method** section - draw diagrams of each method and how they connect with each other.
+7) Read **Results** section - write a paragraph about the result of each experiment, each figure and each table - how do they connect with (5) and (6).
+	7.a) pay attention to "Significand" or "Non-Significand" / "Error Bars" / "Sample Size" / "Data Sources".
+8) Does **Results** answer **SPECIFIC QUESTIONS**.
+9) Read **Conclusion**/**Discussion**/**Interpretation**.
+	9.a) Do you agree to what they propose?
+	9.b) Do you have alternatives ways of interpreting it?
+	9.c) Do they identify weakness in their own study?
+	9.d) Do you see any error?
+	9.e) What are the next steps?
+	9.f) Do you agree with them in general?
+10) Read the **Abstract**.
+	10.a) Does it match with information provided?
+	10.b) Does it fit with their interpretation?
+11) What other researches say about this paper?
+12) Go through the "Literature" cited - Identify those with more important aspect.
+# Should i read Papers? - Michael Robert Bernstein.
+**Should**: Make you understand what you do and find meaning in doing so.
+**Read**: Skim works cited, Google **Authors** and seek information about them, Grasp of the domain.
+**Paper**: People worked hard to produce a piece of information, so try seeking value in it.
+
+# How to read a paper - Srinivasan Keshav.
+**Proposition**: the **Author** propose the **Three-Pass** approach for literature survey.
+
+**Three-Pass Approach Schematic**:
+	A) Specify goals that build up on each other.
+	B) First Pass: General information about the paper.
+	C) Second Pass: Grasp paper's content.
+	D) Third Pass: Understand the paper in depth
+
+**First-Pass**:
+1) Read **Title**, **Abstract** and **Introduction**.
+2) Read **Section** and **Sub-Section** headings.
+3) Read **Conclusions**.
+4) Glance **References** and mark which one you already know.
+
+Answer the five C's:
+C1) Category: What type of paper is this?
+C2) Context: Which papers is it related to?
+C3) Correctness: Do assumptions appear to be valid?
+C4) Contributions: What are the papers main contribution?
+C5) Clarity: Is it well written?
+
+**Second-Pass**:
+1) Analyze **Figures, Diagrams** and **Illustrations** 
+	1.a) Are axes labeled correctly? What do they measure?
+	1.b) Results have error bars?
+	1.c) Which results are statistically significand?
+2) Remember to mark relevant unread references.
+3) Read Background material or proceed to **Third-Pass**.
+
+**Third-Pass**:
+1) Re-implement the paper - Identify **great ideas**, **pitfall** and **errors**.
+2) Write down ideas for **Future Work**.
+3) Identify **Strong** and **Weak** points.
+4) Pinpoint **implicit assumptions**, **missing citations**, **potential issues**.
+
+**Literature Survey**:
+1) Use academic Search Engines (Google Scholar or CiteSeer).
+2) Do the first pass in a couple of papers.
+3) See related work.
+4) Find **papers** and **authors** that are relevant.
+5) See their recent publishes.
+6) See **Top Conferences** and seek best papers in it.
+7) Proceed to do **First** and **Second** pass on papers found.
+
+# The refreshingly rewarding realm of research papers - Sean Cribbs.
+Not done yet...
+
+# Exercises:
+A) Article by Jennifer Raff provide an exercise of analysis of another paper with her correction - 
