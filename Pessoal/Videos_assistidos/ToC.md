@@ -21,5 +21,11 @@
 **Dia 29-10-2025**:
 - [[how-to-play-retro-games-on-a-laptop]] 
 - [[aprender-programacao-e-bem-facil-na-real]] 
+**Dia 04-11-2025**:
+- [[SECOMP-2025-Sessao-Perguntas-e-Respostas-UTFPR]] 
+**Dia 09-11-2025:**
+- [[16-cool-github-repos-you-will-use]] 
+- [[my-honest-advice-to-aspiring-software-engineers]] 
+- [[SECOMP-2025-Sessao-Perguntas-e-Respostas-UTFPR]] - Preciso destacar o quão bom foi esse vídeo.
 
 ****

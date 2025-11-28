@@ -1,35 +1,112 @@
-# O que o Abstract propõe?
-- Oracle-efficient learning algorithms.
-- Minimize the maximum loss between various groups. Rather than equalizing group losses.
-- Relaxations over fairness constraints - this allow a study on the trade-off between fairness and correctness.
-- Minimax fairness is preferable than Equal-Outcome
+# 1.a) Abstract:
+- **Fairness** as *worst-case* outcomes across groups - contrast between [[Fairness-Aware_Classifier_With_Prejudice_Remover_Regularizer]] that uses a general score.
+- Provably convergent oracle-efficient learning algorithms for minimax-group-fairness.
+- Main idea: Minimize Maximum loss across all groups.
+- Flexibility in using: Regression or Classification / Overall error, False positive rate or False negative rate.
+- Supports relaxation of fairness parameter.
+- Minimax is preferable in some contexts rather than Equal-outcomes.
+# 1.b) Introduction:
+- "Equal outcomes" has this hope of achieving lower error rates for disadvantaged group - it is not always the case - creating artificial error (inflating error) in well understanded groups.
+- It is not always the case that we are "Taking from the rich and giving to the poor", so inflating the error in well understood groups in not a good idea - predicting domestic situation.
+- Any model that achieves Minimax-group-fairness *Pareto dominates* an equalized-error model with respect to group error rates.
+- Apparently you can achieve a minimax-fairness scenario and inflate error rates to achieve and equal-outcomes scenario.
+- Advantages over a model for each group - (1) groups do not need to be disjoint (2) minimax approach does not require protected attribute as input for the trained model.
+**Steps Taken**:
+1) Define two algorithms
+	1.1) the first one finds a minimax group fair model.
+	1.2) Second navigates tradeoffs between minimax fairness and accuracy.
+2) Both algorithms converge and are oracle-efficient.
+3) Framework can be extended to other measures and models - how to handle overlapping groups.
+4) Experimental analysis of this two algorithms.
+	4.1) Explore learning process of regression model
+	4.2) Conduct fairness vs accuracy tradeoff in (4.1).
+	4.3) Explore learning process of classification model.
+	4.4) Conduct fairness vs accuracy tradeoff in (4.3).
+# 1.c) Conclusion:
+- Provably convergent algorithm for solving minimax-group-fairness and error minimization for groups under a upper bound - works if sample weights are being used and generalization guarantee of base class of models.
+- Method works for weighted empirical risk minimization problems.
+- In Classification settings it can be used as a principled heuristic.
+- Better performance than equal-outcomes.
 
-# O que é mostrado na introdução?
-- Equal-Outcome é uma métrica muito restritiva. Podem haver casos em que estamos subindo o erro de todos os grupos em prol de fairness, sendo que o ideal seria reduzir o error-rate dos grupos em desvantagem. Isto é, grupos de fácil previsão estão sendo errados de "propósito".
-- Evitar situações em que estamos retirando o benefício de todos em prol de igualdade.
-- Ideia - Utilizar um algoritmo para minimizar o maior erro entre os grupos.
+# 1.d) Skim middle section:
+## Section Names:
+2) **Framework and Preliminaries**.
+3) **Two-Player Game Formulation**.
+	3.1) Algorithm 1 - MinimaxFair.
+	3.2) Algorithm 2 - MinimaxFairRelaxed.
+4) **Theoretical Guarantees**.
+	4.1) Assumption - Oracle Efficiency.
+	4.2) MinimaxFair theoretical guarantees.
+	4.3) MinimaxFairRelaxed theoretical guarantees.
+	4.4) Generalization.
+5) **Extension to False-Positive/False-Negative Rates**.
+6) **Experimental Results**.
+	6.1) Methodology and Data
+		6.1.1) Description of datasets.
+		6.1.2) Train/Test Methodology.
+		6.1.3) Regression - Finding exact solutions efficiently.
+		6.1.4) Classification - Non-convexity of 0/1 Loss.
+		6.1.5) Paired Regression Classifier.
+		6.1.6) Relaxation Methodology.
+	6.2) Linear Regression Experiments.
+		6.2.1) Comparing Minimax to Equality.
+		6.2.2) Relaxing Fairness Constraints.
+	6.3) Classification Experiments.
+		6.3.1) Comparing Minimax to Equality.
+		6.3.2) Relaxation and Pareto Curves.
+		6.3.3) False Positive and False Negative Rates.
+	6.4) Demonstrating Generalization.
+		6.4.1) Regression.
+		6.4.2) Classification.
+## Section Tables:
+![[Pasted image 20251127154052.png|center]]
+Apresentação dos datasets e algumas características presentes nele.
+## Section Figures:
+![[Pasted image 20251127154230.png|center]]
+Location: 6.2 - Linear Regression Experiments.
+Figure 1 Description: 
 
-Suponha que $g'$ é o erro limitante dos grupos, portanto, se $g_{i}$ define o erro do grupo $i$, então:
-$$
-g' \geq g_i \;, \forall i
-$$
-Assim, se existe um grupo $j$ tal que $g_{j} = g'$, então não podemos relaxar esse erro. Desse modo, teremos de aumentar o erro de todos os outros grupos... (SITUAÇÃO RUIM).
+![[Pasted image 20251127154259.png|center]]
+Location: 6.2.1 - Comparing Minimax to Equality.
+Figure 2 Description:
 
-**O que esse método propõe de novo**?
-- Não existe requisito para utilizar grupo disjuntos - podemos extender fairness para grupos com intersecção (ex. Mulher e Negra).
-- Não há necessidade de utilizar um atributo sensível como feature de treinamento.
+![[Pasted image 20251127154427.png|center]]
+Location: 6.2.2 - Relaxing Fairness Constraints.
+Figure 3 Description: 
 
-**Dois algoritmos**:
-1) O primeiro encontra um modelo fair.
-2) O segundo verifica os trade-offs entre correção e fair.
-- Os dois algoritmos convergem e são **Oracle-Efficient**.
-- Diferentes tipos de taxa de erros podem ser incorporadas.
-# O que as Figuras dizem?
-**Figura-1:** O algoritmos **MinimaxFair** apresentou **Group errors tendem a ficar similares** (Será que threshold dos grupos eram frouxos?), **Peso dos grupos em desvantagem sobem**, **Existe correção entre popularion-error e max-group-error**.
+![[Pasted image 20251127154526.png|center]]
+Location: 6.3.1 - Comparing Minimax to Equality
+Figure 4 Description: 
 
-**Figura-2**: A restrição de não possibilitar pesos de amostra negativos deixa o processo de otimização mais simples (função é convexa). Dentro do Dataset pode ser visto o fenômeno de aumentar o error-rate de **Winter** e **Autumn** apenas para cumprir com o Equal-Error.
+![[Pasted image 20251127154623.png|center]]
+Location: 6.3.2 - Relaxation and Pareto Curves.
+Figure 5 Description: 
 
-**Figura-3**: Trade-off entre **Acurácia** e **Fairness**. 
-# Perguntas
-- O que é um **Oracle-Efficient**?
-- O que quer dizer "substantial Pareto Improvement"?
+![[Pasted image 20251127154703.png|center]]
+Location: 6.3.3 - False Positive and False Negative Rates.
+Figure 6 Description:
+
+![[Pasted image 20251127154758.png|center]]
+Location: 6.4.1 - Demonstrating Generalization - Regression.
+Figure 7 Description:
+
+![[Pasted image 20251127154843.png|center]]
+Location: Demonstrating Generalization - Classification.
+Figure 8 Description:
+# 1.e) First Read.
+
+## Classification of the paper:
+1) The paper is **Methodological**, **Theorical** and **Empirical**.
+2) The paper proposes a **Novel Theory Contribution** through a new way of achieving fairness in minimax terms.
+# 2.d) Reference work:
+- [22] - recently proposed the minimax group fairness in context of classification.
+- [12, 31] - use a model for each group - kind of a minimax-solution
+
+
+# Don't know the meaning.
+1) Provably Convergent Oracle-Efficient learning algorithm.
+2) Minimax-group-fairness *Pareto dominates* an equalized-error model with respect to group error rates
+3) Pareto improvement.
+4) In the context of game theory what is a zero-sum game between learner and regulator?
+5) $\frac{1}{\sqrt{T}}$-Approximate Nash equilibrium - ref [15].
+6) Lagrangian dual function of problem (2)

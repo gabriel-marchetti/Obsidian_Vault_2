@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "🏴‍☠️",
+      "SiIntel",
+      "SiVim",
       "SiObsidian",
       "LiApple",
-      "🏗",
-      "FasImagePortrait"
+      "🏗"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -65,5 +65,10 @@
   "Projetos": "🏗",
   "Conceitos": "LiApple",
   "Obsidian": "SiObsidian",
+<<<<<<< HEAD
   "Pirating": "🏴‍☠️"
+=======
+  "Vim": "SiVim",
+  "Assembly": "SiIntel"
+>>>>>>> 410cf7e3ab40be3f3bf02f069e6df796d3fa8b3c
 }
