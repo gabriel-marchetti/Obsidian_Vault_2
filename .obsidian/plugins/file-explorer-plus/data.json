@@ -185,6 +185,13 @@
         "type": "FILES",
         "pattern": "Gaming/Retrobat/guides.md",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Pirating/Piracy-Megathread/General-Rules.md",
+        "patternType": "STRICT"
       }
     ]
   },
