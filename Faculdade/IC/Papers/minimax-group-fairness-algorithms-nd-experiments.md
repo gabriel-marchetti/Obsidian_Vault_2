@@ -1,4 +1,4 @@
-I will follow the paper reading method showed by Peter Klein - [[general]]
+I will follow the paper reading method suggested by Peter Klein - [[general]]
 # 1.a) Abstract:
 - **Fairness** as *worst-case* outcomes across groups - contrast between [[Fairness-Aware_Classifier_With_Prejudice_Remover_Regularizer]] that uses a general score.
 - Provably convergent oracle-efficient learning algorithms for minimax-group-fairness.
@@ -8,21 +8,23 @@ I will follow the paper reading method showed by Peter Klein - [[general]]
 - Minimax is preferable in some contexts rather than Equal-outcomes.
 # 1.b) Introduction:
 - "Equal outcomes" has this hope of achieving lower error rates for disadvantaged group - it is not always the case - creating artificial error (inflating error) in well understanded groups.
-- It is not always the case that we are "Taking from the rich and giving to the poor", so inflating the error in well understood groups in not a good idea - predicting domestic situation.
+- It is not always the case that we are "Taking from the rich and giving to the poor", so inflating the error in well understood groups in not a good idea - predicting domestic situation is an example such that this is not the case.
 - Any model that achieves Minimax-group-fairness *Pareto dominates* an equalized-error model with respect to group error rates.
 - Apparently you can achieve a minimax-fairness scenario and inflate error rates to achieve and equal-outcomes scenario.
-- Advantages over a model for each group - (1) groups do not need to be disjoint (2) minimax approach does not require protected attribute as input for the trained model.
+- Advantages over a model for each group (this is a type of minimax-group fairness, because we are trying to minimize every model) 
+	(1) groups do not need to be disjoint 
+	(2) minimax approach does not require protected attribute as input for the trained model.
 **Steps Taken**:
 1) Define two algorithms
 	1.1) the first one finds a minimax group fair model.
-	1.2) Second navigates tradeoffs between minimax fairness and accuracy.
+	1.2) Second navigates trade-offs between minimax fairness and accuracy.
 2) Both algorithms converge and are oracle-efficient.
 3) Framework can be extended to other measures and models - how to handle overlapping groups.
 4) Experimental analysis of this two algorithms.
 	4.1) Explore learning process of regression model
-	4.2) Conduct fairness vs accuracy tradeoff in (4.1).
+	4.2) Conduct fairness vs accuracy trade-off in (4.1).
 	4.3) Explore learning process of classification model.
-	4.4) Conduct fairness vs accuracy tradeoff in (4.3).
+	4.4) Conduct fairness vs accuracy trade-off in (4.3).
 # 1.c) Conclusion:
 - Provably convergent algorithm for solving minimax-group-fairness and error minimization for groups under a upper bound - works if sample weights are being used and generalization guarantee of base class of models.
 - Method works for weighted empirical risk minimization problems.
