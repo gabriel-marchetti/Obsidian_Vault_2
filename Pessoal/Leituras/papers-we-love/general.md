@@ -43,6 +43,7 @@ Link: https://userpages.umbc.edu/~akmassey/posts/2012-02-15-advice-on-reading-ac
 4) After reading identify: **Main points**, **Weakness** and **Strengths**.
 
 # How to read and understand a scientific paper - Jennifer Raff.
+Link: https://violentmetaphors.com/2013/08/25/how-to-read-and-understand-a-scientific-paper-2/
 
 **Motivation**: importance of scientific papers - they change the way authorities and procedures are made to influence people's life. So there is a importance in identifying **Scientific Authority**.
 - How to know if something is proved? Literature.
@@ -89,6 +90,8 @@ But papers are **Dense**, have **stilted (unnatural) writing** and **unfamiliar 
 **Paper**: People worked hard to produce a piece of information, so try seeking value in it.
 
 # How to read a paper - Srinivasan Keshav.
+Link: http://ccr.sigcomm.org/online/files/p83-keshavA.pdf
+
 **Proposition**: the **Author** propose the **Three-Pass** approach for literature survey.
 
 **Three-Pass Approach Schematic**:
