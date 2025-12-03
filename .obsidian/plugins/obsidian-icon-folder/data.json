@@ -5,13 +5,7 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [
-      "SiIntel",
-      "SiVim",
-      "SiObsidian",
-      "LiApple",
-      "🏗"
-    ],
+    "recentlyUsedIcons": [],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -33,42 +27,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  },
-  "CMAKE": "SiCmake",
-  "Books": "LiBook",
-  "MAKEFILE": "SiGnu",
-  "PostgreSQL": "SiPostgresql",
-  "VHDL": "LiCircuitBoard",
-  "Algorithms": "RiStackLine",
-  "Images": "LiImage",
-  "Templates": "LiLayoutTemplate",
-  "Tables": "FasTableList",
-  "Dictionary": "LiArchive",
-  "Examples": "LiLayoutTemplate",
-  "GameDev": "LiGamepad",
-  "Probability": "LiDice",
-  "GameDev/Game Repositorie": "FasBookOpen",
-  "Mathematics": "RiNumber1",
-  "Python": "SiPython",
-  "Study_Techniques": "📚",
-  "Professores_IC": "RiComputerLine",
-  "MongoDB": "SiMongodb",
-  "C++": "SiCplusplus",
-  "Job_and_Career": "🏢",
-  "CSharp": "SiCsharp",
-  "Faculdade": "LiUniversity",
-  "3D_Priting": "LiMove3d",
-  "Embedded_Systems": "RiCpuLine",
-  "Gaming": "RiGameFill",
-  "Pessoal": "LiPersonStanding",
-  "Pessoas-Importantes": "FasImagePortrait",
-  "Projetos": "🏗",
-  "Conceitos": "LiApple",
-  "Obsidian": "SiObsidian",
-<<<<<<< HEAD
-  "Pirating": "🏴‍☠️"
-=======
-  "Vim": "SiVim",
-  "Assembly": "SiIntel"
->>>>>>> 410cf7e3ab40be3f3bf02f069e6df796d3fa8b3c
+  }
 }

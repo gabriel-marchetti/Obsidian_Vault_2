@@ -1,3 +1,4 @@
+I will follow the paper reading method showed by Peter Klein - [[general]]
 # 1.a) Abstract:
 - **Fairness** as *worst-case* outcomes across groups - contrast between [[Fairness-Aware_Classifier_With_Prejudice_Remover_Regularizer]] that uses a general score.
 - Provably convergent oracle-efficient learning algorithms for minimax-group-fairness.
@@ -64,35 +65,35 @@ Apresentação dos datasets e algumas características presentes nele.
 ## Section Figures:
 ![[Pasted image 20251127154230.png|center]]
 Location: 6.2 - Linear Regression Experiments.
-Figure 1 Description: 
+Figure 1 Description:  We can see that there is no inflation in advantaged groups. This implies in more weight over disadvantaged groups in image at the middle. Moreover we can see in the right image that there is a tradeoff between $\texttt{population error X max group error}$.
 
 ![[Pasted image 20251127154259.png|center]]
 Location: 6.2.1 - Comparing Minimax to Equality.
-Figure 2 Description:
+Figure 2 Description: As we can see here the Equal-Outcomes way inflated the error in groups that were easier to predict, such as Summer and Autumn. In contrast, the Minimax way inflated the error in easier to predict groups, but it was way less inflated than the Equal-Outcomes.
 
 ![[Pasted image 20251127154427.png|center]]
 Location: 6.2.2 - Relaxing Fairness Constraints.
-Figure 3 Description: 
+Figure 3 Description: As we can see as we relax $\gamma$ we see that $\texttt{max population error}$ increases, as theory suggests. But we can control this trade-off via this $\gamma$ parameter.
 
 ![[Pasted image 20251127154526.png|center]]
 Location: 6.3.1 - Comparing Minimax to Equality
-Figure 4 Description: 
+Figure 4 Description: A less smooth visualization of Figure 2 happens when we are under classification methods, i.e., Equal-Outcomes inflate error, Minimax also does but more controlled.
 
 ![[Pasted image 20251127154623.png|center]]
 Location: 6.3.2 - Relaxation and Pareto Curves.
-Figure 5 Description: 
+Figure 5 Description:  Apparently when you use a convex loss function  this trade-off tends to be smooth.
 
 ![[Pasted image 20251127154703.png|center]]
 Location: 6.3.3 - False Positive and False Negative Rates.
-Figure 6 Description:
+Figure 6 Description: You can use other ways of measuring max group error (through FP as shown) and all the previous results will still hold.
 
 ![[Pasted image 20251127154758.png|center]]
 Location: 6.4.1 - Demonstrating Generalization - Regression.
-Figure 7 Description:
+Figure 7 Description: The method can be generalized to hold for $\texttt{train-tess split}$ under regression 
 
 ![[Pasted image 20251127154843.png|center]]
 Location: Demonstrating Generalization - Classification.
-Figure 8 Description:
+Figure 8 Description: The method can be generalized to hold $\texttt{train-test split}$ under classification.
 # 1.e) First Read.
 
 ## Classification of the paper:
