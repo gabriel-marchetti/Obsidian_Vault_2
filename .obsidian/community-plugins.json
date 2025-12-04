@@ -12,5 +12,6 @@
   "multi-column-markdown",
   "obsidian-csv-table",
   "obsidian-spaced-repetition",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-book-search-plugin"
 ]
