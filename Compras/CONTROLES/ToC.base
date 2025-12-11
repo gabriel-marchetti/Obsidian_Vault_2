@@ -1,0 +1,12 @@
+views:
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.inFolder("Compras/CONTROLES")
+        - file.hasTag("game-controller")
+    order:
+      - file.name
+      - Price
+    image: note.image
+    imageFit: contain

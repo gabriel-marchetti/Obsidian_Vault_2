@@ -276,6 +276,34 @@
         "type": "DIRECTORIES",
         "pattern": "Database-example",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Compras/Controles/ToC.base",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Faculdade/IC/ToDo.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Faculdade/IC/Organizar-Anotações.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Compras/CONTROLES/ToC.base",
+        "patternType": "STRICT"
       }
     ]
   },

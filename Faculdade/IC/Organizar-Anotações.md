@@ -1,0 +1,1 @@
+- Organizar a anotação de que utilizar um Método que cria um modelo para cada grupo não utiliza informações de outro grupo para obter informações úteis para sua predição, então seu contexto de aplicação são previsões que não tem muita coisa relacionada entre si.

@@ -97,9 +97,77 @@ Figure 7 Description: The method can be generalized to hold for $\texttt{train-t
 Location: Demonstrating Generalization - Classification.
 Figure 8 Description: The method can be generalized to hold $\texttt{train-test split}$ under classification.
 # 1.e) First Read.
+The first argument that tells us that Equal-Error can be worst than Minimax-Group-Error is the simple argument.
+Suppose there are errors for groups $g_i$ (error rate on group $i$ in a minimax solution) and $g'$ (common error rate between all groups in Equal-Outcomes). We state that the minimax solution will achieve conditions such that $(\forall i)\;\; g_i \leq g'$.
+So if there is only one group $j$ such that $g_j = g'$, then Equal-Error will inflate the errors of all groups that are not $j$.
+
+## Framework and Preliminaries:
+We have a **Dataset** such that $\mathbb{D} = (x_i, y_i)_{i=1}^{n}$, where $x_i$ : features and $y_i$ : labels.
+$\mathbb{D}$ is divided into $K$ groups - $\left\{ G_1, \cdots, G_K\right\}$
+$\mathbb{H}$ is a *class of models* such that $H: x_i \mapsto y_i$
+$L$ is a loss function such that $L(x_i, y_i) \in [0, 1]$
+
+Average **population** error: $\epsilon(h) = \frac{1}{n} \sum_{i=1}^{n}  L(h(x_i), y_i)$
+Average **group** error: $\epsilon_k(h) = \frac{1}{|G_k|} \sum_{(x,y) \in G_k} L(h(x), y)$ 
+When $\Delta H$ is being used it means we have a randomized class of models.
+
+### First Minimax Problem:
+$$
+h^{*} = \text{argmin}_{h \in \Delta H} \Big\{ \text{max}_k \;\;\epsilon_k(h) \Big\}
+$$
+**OPT1**: A solution in $\epsilon$-approx to OPT1, if the model is such that $\max_k \;\;\epsilon_k(h) \leq \max_k\;\; \epsilon_k(h^{*}) + \epsilon$
+Then we can reverse the problem by stating there is such a $\gamma$ that $\gamma \geq OPT1$. 
+This says that $\gamma$ is a **Maximum group error threshold**.
+
+### Second Minimax Problem:
+There are numerous $h$'s that satisfies OPT1, then if we define the problem this way:
+$$
+\begin{align}
+\min_{h \in \Delta H} \epsilon(h) & \\
+\text{subject to  } & (\forall k \in K), \epsilon_k(h) \leq \gamma
+\end{align}
+$$
+**Advantages**:
+- If we define good population error function, there will be only one optimal point.
+- We can establish a trade-off between minimizing population error and inflating the $\gamma$ parameter - beneficial conditions are those that a small increase in $\gamma$ can result in a big decrease in $\epsilon(h)$ - **MAYBE EXPLORE A METHOD/ALGORITHM FOR THAT?**
+
+We can define a second optimal condition:
+A model $h$ is $\epsilon$-approx in regards of OPT2, if $\epsilon(h) \leq \epsilon(h^*) + \epsilon$
+
+**Idea for implementing the algorithms**: Two-Player Game Formulation. But they define a Weighted Empirical Risk Minimization Oracle over the class H.
+**WERM(H)**:
+**INPUTS**>
+	$\mathbb{D}$ : Dataset.
+	W : Weighting of points
+	L : Loss Function.
+**OUTPUTS**>
+	$\hat{h} \in H$, such that, $\hat{h} \in \text{argmin}_{h \in H} \Big[ \sum_{i=1}^{n} w_i \cdot L(h(x_i), y_i)\Big]$
+
+## Two-Player Game Formulation:
+- Zero-Sum Game - Learner and Regulator - **QUESTION**
+- Exponential Weights Algorithm - **QUESTION**
+
+**Algorithm Properties**:
+- Learning Rate can be used as $\eta_t \approx \frac{1}{\sqrt{t}}$
+- The model will output a sequence of models such that $\{ h_1, h_2, \cdots, h_T\}$ and you can use two methods for defining the **predict_proba** method.
+	(1) Take the uniform weights of all models into the prediction.
+	(2) Take a random $h_j$ and use it as the prediction.
+
+**MinimaxFair**:
+INPUTS>
+- $\mathbb{D}$ : Dataset
+- $\eta_t$ : Adaptive learning rate
+- $G_k$ : Populations with size $p_k = \frac{|G_k|}{n}$
+- T : Iteration count
+- L : Loss function
+- H : Model class
+OUTPUTS>
+- Collection of models $\{ h_1, \cdots, h_T \}$
+
+
 
 ## Classification of the paper:
-1) The paper is **Methodological**, **Theorical** and **Empirical**.
+1) The paper is **Methodological**, **Theoretical** and **Empirical**.
 2) The paper proposes a **Novel Theory Contribution** through a new way of achieving fairness in minimax terms.
 # 2.d) Reference work:
 - [22] - recently proposed the minimax group fairness in context of classification.
@@ -111,5 +179,11 @@ Figure 8 Description: The method can be generalized to hold $\texttt{train-test 
 2) Minimax-group-fairness *Pareto dominates* an equalized-error model with respect to group error rates
 3) Pareto improvement.
 4) In the context of game theory what is a zero-sum game between learner and regulator?
-5) $\frac{1}{\sqrt{T}}$-Approximate Nash equilibrium - ref [15].
-6) Lagrangian dual function of problem (2)
+5) What are the theoretical guarantees of Exponential Weights Algorithm.
+6) $\frac{1}{\sqrt{T}}$-Approximate Nash equilibrium - ref [15].
+7) Lagrangian dual function of problem (2) - DONE
+   Since the optimization problem is state as:
+   $$\text{minimize  } \epsilon(h), \;\;\text{subject to } \epsilon_k(h) \leq \gamma,\;\; k = 1, \cdots, K$$
+   Then we have that $F(\lambda, h) = \epsilon(h) + \sum_{k} \lambda_k \left[ \epsilon_k(h) - \gamma\right] \implies F(\lambda,h) = \sum_{k} (p_k + h_k) \epsilon_k - \lambda_k \gamma$
+8) Assumption that Learner has WERM Oracle over class H - Whenever we have that objective function is convex.
+9) Online Gradient Descent.
