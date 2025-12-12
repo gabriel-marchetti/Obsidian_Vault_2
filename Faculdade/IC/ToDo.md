@@ -1,9 +1,10 @@
 # Projeto
 [ ] - Acabar de implementar o Paper [[minimax-group-fairness-algorithms-nd-experiments]].
-[ ] - Mudar perspectiva do modelo para não utilizar o $\epsilon$, mas sim utilizar o número de iterações.
+[X] - Mudar perspectiva do modelo para não utilizar o $\epsilon$, mas sim utilizar o número de iterações.
 [ ] - Implementar a métrica de Fairness geral - (Naive Fairness).
-[ ] - Usar Datasets reais para avaliar o MinimaxFair
-[ ] - Tentar printar as curvas da Figura 1 do paper [[minimax-group-fairness-algorithms-nd-experiments]] - Cada grupo deve ter performance tão boa quanto o baseline
+[X] - Importar os datasets para dentro do repositório
+[X] - Usar Datasets reais para avaliar o MinimaxFair
+[X] - Tentar printar as curvas da Figura 1 do paper [[minimax-group-fairness-algorithms-nd-experiments]] - Cada grupo deve ter performance tão boa quanto o baseline
 [ ] - Implementar o MinimaxFairRelaxed e Avaliar as curvas de pareto.
 [ ] - Ver erro da implementação do [[Fairness-Aware_Classifier_With_Prejudice_Remover_Regularizer]]
 # Estudos

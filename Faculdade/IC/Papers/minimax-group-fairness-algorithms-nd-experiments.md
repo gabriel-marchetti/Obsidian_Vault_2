@@ -164,7 +164,23 @@ INPUTS>
 OUTPUTS>
 - Collection of models $\{ h_1, \cdots, h_T \}$
 
+### Methodology and Data:
+#### Datasets:
+- **Communities and Crime**
+- **Bike**
+- **COMPAS**
+- **Marketing**
+- **Student**
+- **Internet Traffic**
+OBS: 
+- Categorical features were converted using **One-Hot** encoding
+- Group labels were included in the feature set
 
+An overview of the datasets can be viewed in the table:
+![[Pasted image 20251212091152.png|center]]
+
+#### Train/Test Methodology:
+Illustrate **optimization/generalization** performance.
 
 ## Classification of the paper:
 1) The paper is **Methodological**, **Theoretical** and **Empirical**.
