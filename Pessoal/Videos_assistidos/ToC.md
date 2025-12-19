@@ -27,5 +27,9 @@
 - [[16-cool-github-repos-you-will-use]] 
 - [[my-honest-advice-to-aspiring-software-engineers]] 
 - [[SECOMP-2025-Sessao-Perguntas-e-Respostas-UTFPR]] - Preciso destacar o quão bom foi esse vídeo.
+**Dia 15-12-2025:**
+- [[ultimate-roadmap-to-quant-dev-interviews]]
+- [[wtf-is-a-quant]]
+
 
 ****

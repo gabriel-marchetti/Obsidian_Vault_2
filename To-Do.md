@@ -5,7 +5,7 @@
 [ ] Olhar a referência em [[General-Rules]] para o Setting-Up DNS.
 [ ] Eu vi um repositório do Github em [[16-cool-github-repos-you-will-use]] e entre eles tem um que chama "Papers-We-Love". Há uma seção sobre "How-To-Read-a-Paper".
 [ ] Responder perguntas de [[i-have-a-game-idea]]. 
-[ ] Verificar quem é 
+[ ] Responder perguntas em [[Antivirus-Wiki]]
 
 # Read-List:
 1 - [[the-education-of-a-computer-game-designer]]
