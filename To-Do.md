@@ -6,6 +6,7 @@
 [ ] Eu vi um repositório do Github em [[16-cool-github-repos-you-will-use]] e entre eles tem um que chama "Papers-We-Love". Há uma seção sobre "How-To-Read-a-Paper".
 [ ] Responder perguntas de [[i-have-a-game-idea]]. 
 [ ] Responder perguntas em [[Antivirus-Wiki]]
+[ ] Pesquisar sobre Split-Tunneling e Port-Forwarding em [[Torrent-nd-VPN]]
 
 # Read-List:
 1 - [[the-education-of-a-computer-game-designer]]

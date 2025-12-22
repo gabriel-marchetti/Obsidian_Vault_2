@@ -1,0 +1,18 @@
+- Veículo Blindado - Kuruma Blindado/Nightshark/Insurgent
+- Canhão Elétrico
+- Up Atomizador - Para descapotar os carros em missões
+- Laboratório de Ácido - Fazer missões de primeira dose e Oficina de Armas
+- Armas MK2 (dentro da Freakshop)
+- Bunker para fazer as pesquisar e vendas
+- Veículo Toreador - Aguenta até 5 mísseis, Anfíbio e tem mísseis teleguiados
+- Veículo Vigilante - Mísseis apelões
+- Aeronave Furtiva - Akula (Helicoptero) ou Raiju (Jato) - Precisa de um **Hangar**, também habilita forma de ganhar dinheiro.
+- Fliperama - Renda de R$ 5.000,00 por dia passivo e Golpe do Cassino Diamond (Precisa de duas pessoas para fazer) - Terminal de Controle Geral para gerenciar todos os seus esquemas em um lugar só.
+- Veículo com Tecnologia Imani
+- Agência - Oferece três formas de ganhar dinheiro: Contrato VIP, Contratos de Segurança e Cofre (Concluir 200 contratos de segurança) - Habilita tecnologia Imani.
+- Motoclube - Acesso a vários esquemas.
+- Opressor MK2
+- Terrorbyte - diminui o preço da Opressor MK2 
+- Boate - Formas de renda passiva: Manter popularidade alta e depósitos.
+- Sparrow - Fica armazenado dentro do Kosatka
+- Kosatka - Esquema definitivo 
