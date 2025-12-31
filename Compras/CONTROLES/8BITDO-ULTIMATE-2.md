@@ -1,7 +1,9 @@
 ---
 Product Name: 8BITDO ULTIMATE 2
 Price: R$ 350
-tags: game-controller
+tags:
+  - game-controller
+  - not-owned
 image: https://ae-pic-a1.aliexpress-media.com/kf/Saebfebcc3f7b4288a5b05cead7e2e714O.jpg_960x960q75.jpg_.avif
 ---
 # Características
