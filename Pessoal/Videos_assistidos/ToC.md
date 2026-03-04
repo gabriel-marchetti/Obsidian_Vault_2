@@ -30,6 +30,10 @@
 **Dia 15-12-2025:**
 - [[ultimate-roadmap-to-quant-dev-interviews]]
 - [[wtf-is-a-quant]]
+**Dia 03-02-2026:**
+- [[one-year-of-studying-it-was-a-mistake]]
+- [[the-only-paper-every-software-engineer-needs-to-read]]
+
 
 
 ****
