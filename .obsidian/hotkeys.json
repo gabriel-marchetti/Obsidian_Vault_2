@@ -8,14 +8,6 @@
     }
   ],
   "editor:toggle-checklist-status": [],
-  "editor:insert-codeblock": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "C"
-    }
-  ],
   "highlightr-plugin:Blue": [
     {
       "modifiers": [
@@ -23,6 +15,25 @@
         "Shift"
       ],
       "key": "B"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:Templates/texttt.md": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
     }
   ]
 }

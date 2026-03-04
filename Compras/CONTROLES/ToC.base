@@ -8,5 +8,6 @@ views:
     order:
       - file.name
       - Price
+      - tags
     image: note.image
     imageFit: contain

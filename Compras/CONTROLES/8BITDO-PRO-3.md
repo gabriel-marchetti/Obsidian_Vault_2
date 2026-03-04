@@ -1,7 +1,9 @@
 ---
 Product Name:
-Price:
-tags: game-controller
+Price: R$ 350
+tags:
+  - game-controller
+  - owned
 image: https://m.media-amazon.com/images/I/719fctTf6+L.jpg
 ---
 # Características
