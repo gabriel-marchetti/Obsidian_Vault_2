@@ -1,5 +1,11 @@
 Link: https://www.youtube.com/watch?v=NHHQXuvxuL8&list=PL3X6faDN5Eoh08kEKS9XNxopSWGbqrbfB
 
+---
+# Informações para guardar
+**Trabalhos Fooligar Feitos**: 0
+OBS: Precisa fazer 10 desses trabalhos para valer a pena dar o Upgrade no Brickade 6x6 para o laboratório de ácido.
+
+---
 # Vídeo 1:
 - Versão Enhanced Começa com R$ 4,000,00.00
 - Quatro opções para começar:
@@ -78,4 +84,11 @@ OBS: Entregar pizza ou trabalho de Magnata.
 - Preparação equipamento para o laboratório de ácido.
 - Faça o upgrade apenas depois de fazer as missões Fooligan e também compre o submarino
 # Missões da Última Dose:
-- Ganha um carro de graça no final.
+- Fica do lado de fora da *Freakshop*
+- Ganha um carro de graça no final (Ocelot Virtue
+
+# Vídeo 2:
+# Para liberar o golpe de Cayo Perico
+1) The Music Locker e encontrar o Miguel Madrazzo
+2) Comprar o Kosatka
+3) 
