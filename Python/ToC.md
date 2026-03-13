@@ -1,6 +1,7 @@
 ---
 tags:
   - python
+<<<<<<< HEAD
   - learning
 ---
 # Materials to Learn Python:
@@ -30,3 +31,11 @@ There is also this list about Beginner's Guide to Python - https://wiki.python.o
 # See if there is time left and nothing else to-do:
 [Python One-Liners](https://wiki.python.org/moin/Powerful%20Python%20One-Liners)
 Possuem diversos links exploratórios presentes no link de [[Beginners-Guide]].
+=======
+  - table-of-contents
+---
+**22/01/2026**:
+- [[Optional]]
+- [[ABC]]
+
+>>>>>>> d290a69 (Added some notes on about the ic project and some python anot)
