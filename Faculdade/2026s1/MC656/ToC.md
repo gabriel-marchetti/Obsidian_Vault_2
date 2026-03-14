@@ -23,3 +23,6 @@ tags:
 # Aulas:
 # Tópicos:
 # Dúvidas:
+
+# Anotações
+[[Faculdade/2026s1/MC656/Introduction|Introduction]] - 
