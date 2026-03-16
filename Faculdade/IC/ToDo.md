@@ -16,3 +16,5 @@
 [ ] - Ler o "User Guide" do Scikit-Learn - https://scikit-learn.org/stable/user_guide.html
 [ ] - Ler o "Quickstart" do JAX - https://docs.jax.dev/en/latest/notebooks/thinking_in_jax.html
 [ ] - O que é um Rashmon Set (Qual contexto que ele está inserido?)
+
+# Organização:

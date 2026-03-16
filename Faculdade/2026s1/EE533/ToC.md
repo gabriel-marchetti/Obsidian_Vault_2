@@ -9,19 +9,21 @@ tags:
   - 2026s1
 ---
 # Pré-requisitos:
-- Domínio da teoria de circuitos - principalmente aplicação das leis de Kirchoff em circuitos RLC.
+- Domínio da teoria de circuitos - principalmente aplicação das leis de Kirchhoff em circuitos RLC.
 - Teorema de Thevenin .
 - Teorema de Norton.
 ## Alguns Temas que preciso revisar:
-[] - Leis de Kirchhoff - LK das Correntes e LK das Tensões.
-[] - Teorema de Thévenin.
+[X] - Leis de Kirchhoff - LK das Correntes e LK das Tensões.
+	- Lei de Kirchhoff das Correntes - A soma das correntes em um nó é nula.
+	- Lei de Kirchhoff das Tensões - A soma das tensões em uma malha é nula.
+[] - Teorema de Thevenin.
 [] - Teorema de Norton.
 [] - Divisores de Tensão e Corrente.
 [] - Comportamento de Capacitores
 [] - Comportamento de Indutores.
 ### Temas mais Suplementares:
-[] - Lei de Ohm - $V=R\times I$.
-[] - Potência - $P = V \times I$.
+[X] - Lei de Ohm - $V=R\times I$.
+[X] - Potência - $P = V \times I$.
 [] - Associação de resistores.
 [] - Nós e Malhas.
 # Ementa:
@@ -38,7 +40,9 @@ tags:
 [Materiais Complementares para LTSpice](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)
 
 # Planejamento Semanal:
-[] Preciso baixar o LTSpice
+[X] Preciso baixar o LTSpice
+[] Terminar de fazer a lista 1
+[] Terminar de fazer a lista 2
 # Aulas:
 # Tópicos:
 # Dúvidas:
