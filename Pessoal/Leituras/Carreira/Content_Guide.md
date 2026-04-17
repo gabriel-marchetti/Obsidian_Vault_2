@@ -7,3 +7,7 @@
 
 **Dia 24-09-2025:**
 [[Which_Programming_Language_Should_I_Learn_First]]: 
+
+**Dia 16-04-2026**:
+[[these-5-github-repos-taught-me-more-than-any-500-course]]
+[[you-studied-so-hard-why-arent-you-fluent-yet]] 
