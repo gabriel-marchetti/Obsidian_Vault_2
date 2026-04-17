@@ -24,5 +24,8 @@ tags:
 # Tópicos:
 # Dúvidas:
 
+# Leitura Livro:
+[[Capitulo-1]] 
+
 # Anotações
 [[Faculdade/2026s1/MC656/Introduction|Introduction]] - 
