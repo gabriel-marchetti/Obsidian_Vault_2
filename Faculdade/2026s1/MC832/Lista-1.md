@@ -1,0 +1,15 @@
+---
+tags:
+  - redes-de-computadores
+---
+1) O que significa dizer que a Internet é uma “rede de redes”? Explique essa ideia com base na organização da Internet mostrada nas aulas.
+
+**Resposta**: Dizer que a internet é uma rede de redes consiste em dizer que há várias redes interconectadas entre si, isso pode ser dito de modo mais simples. Se quisermos nos aprofundar, podemos dizer que a rede é composta por diferentes ISPs (Internet Service Provider) que são divididos em hierarquias, ISPs regionais ou internacionais. Contudo, para não haver problema de um ISP ter que se conectar com todos os outros ISPs, eles compartilham o serviço entre eles para atingir a magnitude atual da rede. Podemos ainda dizer que esses ISPs atuam como AS (Autonomous Systems) que nesse sentido são redes de uma organização e são conectados através de IXPs para garantir conectividade entre essas redes, é claro que para troca de informações entre elas existem protocolos o BGP.
+
+2) O que é um protocolo de rede e por que ele é essencial para o funcionamento da Internet? Explique o que ele define e relacione sua importância com o envio, recebimento e a organização das mensagens entre dispositivos
+
+**Resposta**: Um protocolo de rede consiste em uma regra que define o formato e a ordem em que as mensagens serão realizadas, elas são essenciais justamente porque definem padrões a serem seguidos por qualquer entidade dentro da rede. Veja, por exemplo, que se estivermos em uma comunicação entre pessoas para pedir o horário se uma pessoa falar que jantou hamburguer na noite passada isso irá ser estranho para conversa, imagine isso dentro de sistemas complexos computacionais. Portanto, ela define as mensagens que serão trocadas, podemos até entrar na questão de definir a semântica e a sintaxe das mensagens, assim como a ordem que essas mensagens devem ser enviadas, por exemplo, inicialmente pode acontecer um handshake para garantir comunicação, ou até mesmo garantir que a mensagem tenha chegado até determinado ponto.
+
+3) O que são redes de acesso e qual é o papel delas na Internet? Explique como elas se relacionam com o núcleo da rede, cite um exemplo de tecnologia de acesso à Internet e comente brevemente como a escolha dessa tecnologia pode impactar o uso da rede
+
+**Resposta**: Redes de acesso são portas de entrada para dispositivos na borda da rede para que eles consigam acessar os serviços oferecidos pela rede. Pense que ela se relaciona com a rede, pois é o primeiro contato da mensagem com o core da rede, portanto, é essencial para que os usuários tenham acesso, um exemplo de tecnologia são os pontos de entrada 5G que possibilitam que, principalmente, dispositivos móveis consigam ter acesso à rede. Veja que o acesso de tecnologia define o throughput dessa rede, assim como latência e área de atuação, pense no caso do 5G que possui um throughput na ordem de dezenas de Mbps, latência proporcional à distância a antena que captura o sinal, assim como uma área de atuação grande. Veja que outras características são notadas para cabos Ethernet.

@@ -10,6 +10,9 @@ tags:
 ---
 # Ementa:
 # Bibliografia:
+# Notas:
+**P1**: 8.5
+
 # Planejamento Semanal:
 # Aulas:
 # Tópicos:

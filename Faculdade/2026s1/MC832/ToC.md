@@ -24,7 +24,12 @@ tags:
 - Computer Networking: a top-down Approach, James F. Kurose and Keith W. Ross; Pearson, 6th Edition (2012)
 - Computer Networks, Andrew S. Tanenbaum; Pearson, 5th Edition (2010)
 - Internetworking with TCP/IP Volume One, by Douglas E. Comer; Pearson, 6th Edition (2013)
-# Planejamento Semanal:
+# Planejamento:
+[[Lista-1]]
+[[Lista-2]]
+[[Lista-3]]
 # Aulas:
+[[Transport-Layer]] 
 # Tópicos:
+[[Web-e-HTTP]] 
 # Dúvidas:

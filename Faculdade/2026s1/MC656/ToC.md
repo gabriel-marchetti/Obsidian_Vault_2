@@ -21,6 +21,7 @@ tags:
 
 # Planejamento Semanal:
 # Aulas:
+[[2026-04-09]] - Engenharia de Requisitos.
 # Tópicos:
 # Dúvidas:
 
