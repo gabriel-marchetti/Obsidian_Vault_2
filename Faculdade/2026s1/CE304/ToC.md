@@ -10,7 +10,9 @@ tags:
 ---
 # Ementa:
 # Bibliografia:
-# Planejamento Semanal:
+# Planejamento:
+[[Prova-1]]
 # Aulas:
+[[Atividade-Comunicador-da-Norma]] 
 # Tópicos:
 # Dúvidas:

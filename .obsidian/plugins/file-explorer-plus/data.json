@@ -444,6 +444,20 @@
         "type": "FILES",
         "pattern": "Faculdade/Courses/google-ml-crash-course/ToC.md",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Videos-Akita/ToC.md",
+        "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "HTML/ToC.md",
+        "patternType": "STRICT"
       }
     ]
   },

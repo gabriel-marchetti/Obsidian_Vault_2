@@ -136,4 +136,30 @@ $$
 \texttt{Timeout Interval} = \texttt{Estimated RTT} + 4 \cdot \texttt{Deviation RTT}
 $$
 
+**TCP sender**:
+1) Creates segment with seq #
+2) Start timer for oldest unACKed 
 
+**TCP fast retransmit**: If receive 3 ACKs for same data, then resend segment with smallest seq #.
+## TCP Reliability, Flow Control, Congestion Control:
+**Flow Control**: Receiver controls sender, so sender won't overflow receiver buffer.
+Receiver manda quanto de memória livre ele possui no campo rwnd do Header TCP.
+
+### TCP connection management:
+- handshake protocol - 2-way handshake and 3-way handshake.
+![[Pasted image 20260428145042.png]]
+**Closing a TCP connection**.
+
+# Principles of Congestion Control:
+Manifestações de congestionamento podem ser percebidas através de **long delays** e **packet loss**. 
+
+Mesmo considerando o caso ideal de um buffer infinito podemos perceber que há um delay muito grande 
+![[Pasted image 20260428151420.png]]
+Nesse caso aqui haverá uma decadência da curva, porque agora temos o problema de perda de pacotes em buffers cheios. Isto é, o envio de um pacote não corresponde ao recebimento de um pacote. Veja que esse problema é agravado caso consideremos problema de retransmissão de duplicatas.
+![[Pasted image 20260428151731.png]]
+
+**End-End Congestion Control**:
+- Diminui a quantidade de dados enviados para um receiver à medida que percebe que pacotes estão sendo perdidos.
+
+**Network-Assisted Congestion Control**:
+- Roteadores providenciam fedback sobre o fluxo de dados dentro da rede.

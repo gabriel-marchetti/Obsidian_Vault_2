@@ -19,7 +19,8 @@ tags:
 - Liberação de um software
 # Bibliografia:
 
-# Planejamento Semanal:
+# Planejamento:
+[[Entrega-2]] 
 # Aulas:
 [[2026-04-09]] - Engenharia de Requisitos.
 # Tópicos:
@@ -27,6 +28,7 @@ tags:
 
 # Leitura Livro:
 [[Capitulo-1]] 
+[[Capitulo-3]] 
 
 # Anotações
 [[Faculdade/2026s1/MC656/Introduction|Introduction]] - 

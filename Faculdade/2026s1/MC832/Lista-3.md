@@ -33,4 +33,36 @@ OBS:
 
 **Resposta**: A função do checksum dentro do UDP é garantir que os dados transmitidos sejam verificados para sistemas que possuem falhas por inversão de bits, podemos argumentar que esse mecanismo não é robusto, pois pode dar uma falsa validação de um dado que está corrompido. 
 
-8) 
+8) Quais problemas um protocolo de transferência confiável precisa resolver quando opera sobre um serviço não confiável? Comente perda, corrupção, duplicação, reordenação e temporização.
+
+**Resposta**: Essa questão está diretamente relacionada com as versões de rdt (reliable data transfer). Em primeiro lugar, podemos comentar sobre a perda de a corrupção de pacotes, esse mecanismo pode ser parcialmente evitado através de mecanismos de checksum, o fato de ser parcialmente evitado é que uma corrupção de dados específica pode ocasionar na falha da detecção pelo checksum. Sobre a perda de pacotes há uma comunicação através de ACKs ou NACKs onde cada pacote recebido é mandada uma mensagem positiva ou negativa, além disso mecanismos de duplicação e reordenação podem ser feito através de numeração dos pacotes que poderá facilitar para o recebedor de saber quais pacotes são duplicados e em qual ordem eles devem chegar. Por fim, o mecanismo de temporização é utilizando para resolver casos em que um canal de comunicação é afetado durante a comunicação, veja que eles são importantes para retransmissão da mensagem caso algo inesperado aconteça.
+
+OBS: podemos falar sobre o modelo "Stop-and-Wait" em que um pacote é enviado e espera o ACK para mandar outro pacote.
+
+9) Explique a função dos ACKs, dos números de sequência e dos temporizadores em protocolos de transferência confiável.
+
+**Resposta**: Os ACKs, números de sequência e temporizadores são mecanismos para tornar canais de comunicação não confiáveis em mecanismos mais confiáveis para comunicação. Em primeiro lugar, vamos comentar sobre os ACKs, eles funcionam através do mecanismo de "Stop-and-Wait" em que o envio de um próximo pacote do sender só é realizado após o recebimento de um ACK do receiver, veja que isso garante que o canal de comunicação seja mais transparente para ambas entidades da rede. Agora podem existir problemas de que um pacote é enviado por um percurso mais rápido do que o anterior, desse modo podemos utilizar os números de sequência em que um número é atribuído para cada pacote e a mensagem de ACK é seguida de um número do pacote, veja que isso mantém a comunicação entre as entidades mais coordenadas. Por fim, temos os temporizadores, veja que se um pacote se perde pelo caminho da rede, então o receiver nunca irá mandar o ACK para esse pacote que geraria um stall da comunicação entre sender e receiver, portanto, o mecanismo de temporização serve para garantir a retransmissão do pacote caso isso ocorra.
+
+OBS: o número de sequência é mais utilizado para detecção de duplicatas.
+
+10) O que significa dizer que um protocolo confiável é pipelined? Explique por que essa ideia pode melhorar o desempenho em comparação com um envio estritamente sequencial.
+
+**Resposta**: Dizer que um protocolo confiável é pipelined significa dizer que ele possui um mecanismo para envio simultâneo de diversos pacotes. Para avaliar a melhora do desempenho vamos primeiro ver o gargalo do envio estritamente sequencial, uma ação que ocorre geralmente é que há um processamento por um host seguido da transmissão da mensagem para um outro host que irá mandar a mensagem de ACK, veja que esse mecanismo sugere que para cada pacote enviado haverá um atraso de RTT. Desse modo, os mecanismos de pipeline tentam tirar proveito dessa questão, em que diversos pacotes são enviados nesse meio tempo, desse modo há um claro aumento de performance, pois estamos reaproveitando o tempo.
+
+OBS:
+Podemos utilizar a fórmula de utilização do sender para comprovar isso.
+No mecanismo sequencial "stop-and-wait", temos que:
+$$
+U_{\texttt{sender}} = \frac{L/R}{RTT + L/R}
+$$
+Se utilizarmos o modo de pipeline, temos que:
+$$
+U_{\texttt{sender}} = \frac{N * L/R}{RTT + L/R}
+$$
+11) Compare Go-Back-N e Selective Repeat. Aponte diferenças na forma de reconhecer dados, armazenar pacotes e retransmitir em caso de perda.
+
+**Resposta**: o Go-back-N possui ACK cumulativo, ou seja, uma mensagem de ACK deve ser interpretada como "recebi todos os pacotes até o índice x", enquanto dentro do Selective Repeat temos que cada ACK é individual. Além disso, temos que o receptor não precisa de buffer para o Go-back-N, uma vez que ele atua de uma forma sequencial, isto é, ele espera uma ordem de chegada de pacotes, enquanto o Selective Repeat precisa de um buffer no receptor para que ele consiga tratar os pacotes no modo fora de ordem. Por fim, também temos que a retransmissão de mensagens dentro do Go-Back-N é mais intensa, uma vez que ele precisa enviar diversos pacotes duplicados, enquanto o Selective Repeat reenvia apenas pacotes que ainda não foram processados.
+
+12) Em termos de simplicidade e eficiência, quais são os principais trade-offs entre Go-Back-N e Selective Repeat?
+
+**Resposta**: Veja que o modo Selective Repeat é mais eficiente de um modo geral, pois ele tem tratamento individual de pacotes, isto é, há um temporizador para cada pacote, reconhecimento de ACKs para cada pacote e por ai vai, portanto, ele é mais eficiente, pois não tende a reenviar muitos pacotes repetidos, contudo isso vem com um custo de processamento individual de cada pacotes, por exemplo os temporizadores individuais, assim como há necessidade do receptor também precisar de um buffer específico para tratar individualmente os pacotes.
