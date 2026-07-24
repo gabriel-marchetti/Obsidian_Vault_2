@@ -10,7 +10,11 @@ tags:
 ---
 # Ementa:
 # Bibliografia:
-# Planejamento Semanal:
+# Planejamento:
 # Aulas:
+[[Analise-de-Balanço]] 
+[[Endividamento]]
+[[Custo_de_Capital]]
+
 # Tópicos:
 # Dúvidas:

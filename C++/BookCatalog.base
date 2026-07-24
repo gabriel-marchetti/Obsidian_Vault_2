@@ -1,0 +1,13 @@
+views:
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.folder == "C++/BookCatalogDatabase"
+    order:
+      - file.name
+      - book-name
+      - Author
+    image: note.image
+    imageFit: contain
+    cardSize: 200

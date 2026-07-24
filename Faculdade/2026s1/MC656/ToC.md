@@ -23,6 +23,8 @@ tags:
 [[Entrega-2]] 
 # Aulas:
 [[2026-04-09]] - Engenharia de Requisitos.
+[[Estilos_Arquiteturais]] 
+[[Arquiteturas_de_referencia_e_frameworks]] 
 # Tópicos:
 # Dúvidas:
 

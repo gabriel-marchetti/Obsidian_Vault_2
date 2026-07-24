@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Entretenimento/SERIES/COMPUTACAO")
+        - file.name != "ToC.base"
+    order:
+      - file.name
+  - type: cards
+    name: View 2
+    filters:
+      and:
+        - file.inFolder("Entretenimento/SERIES/COMPUTACAO")
+        - file.name != "ToC.base"
+    image: note.link
+    cardSize: 190
+    imageFit: contain
