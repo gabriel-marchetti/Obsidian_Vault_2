@@ -43,6 +43,9 @@
 - [[I-Taught-Myself-C-By-Rejecting-Modern-Tech]]
 - [[I-Tried-TempleOS-as-a-C++-dev]]
 - [[Intro-to-Graphics-Programming-(What-it-is-and-where-to-start]] 
+**Dia 02-08-2026**:
+- [[Programming-Concepts-that-already-altered-my-brain-chemistry]]
+- 
 
 
 ****
