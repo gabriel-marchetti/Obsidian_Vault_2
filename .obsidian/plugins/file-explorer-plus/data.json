@@ -449,49 +449,7 @@
         "name": "",
         "active": true,
         "type": "FILES",
-        "pattern": "Videos-Akita/ToC.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "HTML/ToC.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Arduino/ScienceBuddies/ToC.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Entretenimento/SERIES/COMPUTACAO/ToC.base",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Pessoal/Leituras/Articles/ToC.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "Pessoal/Palestras/ToC.md",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "FILES",
-        "pattern": "C++/Book_Catalog.base",
+        "pattern": "Faculdade/2026s2/ToC.md",
         "patternType": "STRICT"
       },
       {
