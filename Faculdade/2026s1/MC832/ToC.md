@@ -25,7 +25,7 @@ tags:
 - Computer Networks, Andrew S. Tanenbaum; Pearson, 5th Edition (2010)
 - Internetworking with TCP/IP Volume One, by Douglas E. Comer; Pearson, 6th Edition (2013)
 # Planejamento:
-[[Lista-1]]
+[[Faculdade/2026s1/MC832/Lista-1]]
 [[Lista-2]]
 [[Lista-3]]
 # Aulas:
